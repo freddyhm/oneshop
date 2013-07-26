@@ -1767,6 +1767,11 @@ tr.summary-details-excluded { font-style:italic; }
 
 /* BOTTOM CONTENT */
 
+.wrapper
+{
+	background-color: red;
+}
+
 #home-slider
 {
 	top:33px;

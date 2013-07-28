@@ -26,7 +26,7 @@
 /* Reset ================================================================================= */
 * { margin:0; padding:0; }
 
-body          { background:#f2f2f2 url(../images/bkg_body.gif) 0 0 repeat; font:11px/1.55 arial, helvetica, sans-serif; color:#444; text-align:center; }
+body          { background:#f2f2f2 url(../images/bkg_body.gif) 0 0 repeat; text-transform: uppercase; font:11px/1.55 arial, helvetica, sans-serif; color:#444; text-align:center; }
 
 img           { border:0; vertical-align:top; }
 
@@ -95,7 +95,7 @@ li { list-style-type: none;}
 
 /* Layout ================================================================================ */
 .wrapper {}
-.page { width:960px; margin:15px auto 0; text-align:left; }
+.page { width:100%; margin:15px auto 0; text-align:left; }
 .page-print { background:#fff; padding:25px 30px; text-align:left; }
 .page-empty { background:#fff; padding:20px; text-align:left; }
 .page-popup { background:#fff; padding:25px 30px; text-align:left; }
@@ -736,8 +736,30 @@ tr.summary-details-excluded { font-style:italic; }
 /* View Type: Grid */
 .products-grid { position:relative; }
 .products-grid.last { border-bottom:0; }
-.products-grid li.item { float:left; width:171px; padding:0 0 90px; }
-.products-grid .product-image { display:block; width:170px; height:170px; border:1px solid #ddd; border-width:1px 1px 1px 0; margin:0 0 10px; }
+.products-grid li.item 
+{ 
+	float:left; 
+	width:249px; 
+	height: 249px;
+	padding:0 5px 0px;
+}
+
+.products-grid .product-image 
+{ 
+	display:block; 
+	width:100%; 
+	height:100%; 
+	border:1px solid #ddd; 
+	border-width:1px 1px 1px 0; 
+	margin:0 0 10px; 
+}
+
+.product-image img
+{
+	width: 100%;
+	height: 100%;
+}
+
 .products-grid.first .product-image { border-top:0; }
 .products-grid li.last .product-image { border-right:0; }
 .products-grid .product-name { font-size:12px; margin:0 0 6px; }
@@ -749,7 +771,42 @@ tr.summary-details-excluded { font-style:italic; }
 .col2-left-layout .products-grid,
 .col2-right-layout .products-grid { width:684px; margin:0 auto; }
 .col1-layout .products-grid,
-.page-empty .products-grid { width:684px; margin:0 auto; }
+.page-empty .products-grid 
+{ 
+	width:1072px; margin:0 auto; 
+}
+
+.product-name 
+{
+	margin: 0;
+	font-size: 1em;
+	font-weight: normal;
+	line-height: 1.55;
+	bottom: 174px;
+	position: relative;
+	text-align: center;
+	right: 17px;
+}
+
+.price-box .price 
+{
+	font-size: 13px;
+	font-weight: bold;
+	color: #396f00;
+	bottom: 101px;
+	position: relative;
+	left: 38px;
+}
+
+.catalog-overlay
+{
+	width: 135px;
+	position: absolute;
+	background-color: black;
+	opacity: 0.8;
+	height: 137px;
+}
+
 
 /* View Type: List */
 .products-list li.item { border-bottom:1px solid #d9ddd3; padding:12px 10px; }
@@ -1653,14 +1710,26 @@ tr.summary-details-excluded { font-style:italic; }
 
 
 /* Footer ================================================================================ */
-.footer-container {}
-.footer { margin:15px 0 40px; }
+.footer-container
+{
+	text-align: left;
+	color: rgb(143, 143, 143);
+	zoom: 1;
+	font-size: 11px;
+	font-weight: bolder;
+	background-color: #131313;
+	position: fixed;
+	bottom: 0;
+	z-index: 100;
+	width: 100%;
+}
+
 .footer a { color:#444; }
 
 .footer .f-left { width:520px; }
 .footer .f-right { width:429px; }
 
-.footer ul { display:inline; }
+.footer ul { display:inline; width: 650px;}
 .footer li { display:inline; background:url(../images/bkg_pipe1.gif) 100% 50% no-repeat; padding:0 5px 0 0; margin:0 3px 0 0; }
 .footer .links li.last { background:none !important; padding-right:0 !important; }
 .footer .bugs { margin:0; color:#666; }
@@ -1765,12 +1834,7 @@ tr.summary-details-excluded { font-style:italic; }
 
 /* ONESHOP Custom */
 
-/* BOTTOM CONTENT */
-
-.wrapper
-{
-	background-color: red;
-}
+/* HOME PAGE */
 
 #home-slider
 {
@@ -1781,12 +1845,6 @@ tr.summary-details-excluded { font-style:italic; }
 {
     width: 33%;
     text-align: center;
-}
-
-.first-bottom-section
-{
-    height: 210px;
-    margin-top: 20px;
 }
 
 #bottom-section
@@ -1827,33 +1885,6 @@ tr.summary-details-excluded { font-style:italic; }
 }
 
 
-
-.top-overlay
-
-{
-    width: 100%;
-height: 100%;
-background-color: black;
-opacity: 0.7;
-position: relative;
-top: -140px;
-display:none;
-}
-
-.bottom-overlay
-
-{
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    opacity: 0.7;
-    position: relative;
-    top: -121px;
-    display:none;
-}
-
-
-
 #left-section
 {
     float:left;
@@ -1869,3 +1900,6 @@ display:none;
 {
     float:right;    
 }
+
+/* CATALOG PAGE */
+

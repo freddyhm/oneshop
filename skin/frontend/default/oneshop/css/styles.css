@@ -760,6 +760,16 @@ tr.summary-details-excluded { font-style:italic; }
 	height: 100%;
 }
 
+.item .product-name
+{
+	display: none;
+}
+
+.price-box .regular-price .price
+{
+	display: none;
+}
+
 .products-grid.first .product-image { border-top:0; }
 .products-grid li.last .product-image { border-right:0; }
 .products-grid .product-name { font-size:12px; margin:0 0 6px; }
@@ -800,11 +810,17 @@ tr.summary-details-excluded { font-style:italic; }
 
 .catalog-overlay
 {
-	width: 135px;
+	width: 249px;
+	height: 249px;
 	position: absolute;
 	background-color: black;
 	opacity: 0.8;
-	height: 137px;
+	display: none;
+}
+
+.product-detail
+{
+	display: none;
 }
 
 

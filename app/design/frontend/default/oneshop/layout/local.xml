@@ -4,15 +4,7 @@
         <reference name="head">
             <action method="addItem">
                 <type>skin_js</type>
-                <name>js/jquery-1.10.2.min.js</name>
-            </action>
-            <action method="addItem">
-                <type>skin_js</type>
                 <name>js/jquery.flexslider-min.js</name>
-            </action>
-            <action method="addItem">
-                <type>skin_js</type>
-                <name>js/no.conflict.js</name>
             </action>
             <action method="addItem">
                 <type>skin_js</type>

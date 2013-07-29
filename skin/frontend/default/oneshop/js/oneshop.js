@@ -1,5 +1,6 @@
 jQuery(document).ready(function($){
 	
+
 	// init slider on homepage
 	$('.flexslider').flexslider({
    		 slideshow: "false"

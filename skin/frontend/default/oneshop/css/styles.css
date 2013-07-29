@@ -760,14 +760,17 @@ tr.summary-details-excluded { font-style:italic; }
 	height: 100%;
 }
 
-.item .product-name
+.quickview
 {
-	display: none;
+	z-index: 2;
 }
 
-.price-box .regular-price .price
+.product-info
 {
-	display: none;
+	width: 249px;
+	height: 249px;
+	position: absolute;
+	bottom: 0px;
 }
 
 .products-grid.first .product-image { border-top:0; }
@@ -792,7 +795,6 @@ tr.summary-details-excluded { font-style:italic; }
 	font-size: 1em;
 	font-weight: normal;
 	line-height: 1.55;
-	bottom: 174px;
 	position: relative;
 	text-align: center;
 	right: 17px;
@@ -803,9 +805,9 @@ tr.summary-details-excluded { font-style:italic; }
 	font-size: 13px;
 	font-weight: bold;
 	color: #396f00;
-	bottom: 101px;
 	position: relative;
 	left: 38px;
+	top: 171px;
 }
 
 .catalog-overlay
@@ -815,10 +817,9 @@ tr.summary-details-excluded { font-style:italic; }
 	position: absolute;
 	background-color: black;
 	opacity: 0.8;
-	display: none;
 }
 
-.product-detail
+.product-info
 {
 	display: none;
 }

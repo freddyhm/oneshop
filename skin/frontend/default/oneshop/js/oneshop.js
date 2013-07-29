@@ -1,20 +1,35 @@
-jQuery(document).ready(function(){
+jQuery(document).ready(function($){
 	
 	// init slider on homepage
-	jQuery('.flexslider').flexslider({
+	$('.flexslider').flexslider({
    		 slideshow: "false"
  	});
-
+ 
 	// show/hide product name, price, overlay
-	jQuery(".item").hover(
+	$(".item").hover(
 		function(){
-			jQuery(".product-name", this).show();
-			jQuery(".catalog-overlay", this).show();
-			jQuery(".price", this).show();
+			$(".product-info", this).show();
 		}, function(){
-			jQuery(".product-name", this).hide();
-			jQuery(".catalog-overlay", this).hide();
-			jQuery(".price", this).hide();
+			$(".product-info", this).hide();
+		}
+	);
+
+	// fixes product desc hide when hover over quickview btn
+	$("#md_quickview_handler").hover(
+		function(){
+
+			var url = $(this).attr("href").split("/");
+			var currentProductName = url[7];
+
+			$(".product-info").each(function (i) {
+
+	         	var url = $(".product-name a", this).attr("href").split("/");
+				var productName = url[4];
+
+				if(productName == currentProductName){
+					$(this).show();
+				}
+	      	});
 		}
 	);
 });

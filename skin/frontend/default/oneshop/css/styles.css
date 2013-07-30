@@ -499,7 +499,11 @@ tr.summary-details-excluded { font-style:italic; }
 
 .header .top-promo { float:left; width:117px; height:30px; margin:12px 10px 0; background:url(../images/bkg_top-promo.gif) 0 0 no-repeat; text-indent:-999em; overflow:hidden; }
 
-.quick-access { background:#444; color:#fff; padding:7px 13px; text-align:right; }
+.quick-access 
+{ 
+	background:#444; color:#fff; padding:7px 13px; text-align:right; 
+	background-color: black;
+}
 .quick-access .welcome-msg { display:inline; margin:0; color:#fff; }
 .quick-access .welcome-msg a { color:#ddd; }
 .quick-access .form-language { float:left; }
@@ -740,14 +744,31 @@ tr.summary-details-excluded { font-style:italic; }
 
 
 /* Category Page ========================================================================= */
-.category-title { margin:0 0 7px; }
+.category-title 
+{ 
+	background-color: black;
+	width: 982px;
+	height: 122px;
+	margin-left: 7px;
+	line-height: 3;
+}
+
+.category-header
+{
+    width: 1001px;
+    text-align: left;
+    margin: auto;
+    margin-top:27px;
+}
+
+
 .category-title h1 
 { 
-	width: 943px;
-    position: relative;
-    font-size: 22px;
-    top: 18px;
-    left:20px;
+	float: left;
+	margin-left: 38px;
+	width: 105px;
+	font-size: 40px;
+	margin-right: 34px;
 }
 
 .category-image { width:100%; overflow:hidden; margin:0 0 10px; text-align:center; }
@@ -756,8 +777,12 @@ tr.summary-details-excluded { font-style:italic; }
 .category-description 
 { 
 	font-size: 22px;
-    color:white;
-    font-weight:500;
+	color: white;
+	font-weight: 500;
+	width: 943px;
+	position: relative;
+	top: 18px;
+	left: 20px;
 }
 
 .category-products 

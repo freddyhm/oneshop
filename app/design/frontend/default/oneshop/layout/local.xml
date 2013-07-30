@@ -37,9 +37,12 @@
              <remove name="store_switcher"/>
              <remove name="footer_links"/>
         </reference>
+        
     </default>
     <catalog_category_default>
-       
+       <reference name="root">
+            <remove name="breadcrumbs"/>
+        </reference>
         <reference name="product_list">
             <action method="setColumnCount"><columns>4</columns></action>
         </reference>

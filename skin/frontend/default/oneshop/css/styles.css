@@ -482,9 +482,18 @@ tr.summary-details-excluded { font-style:italic; }
 
 /* Header ================================================================================ */
 .logo { float:left; }
-.header-container {}
+.header-container 
+{
+	background-color: black;
+}
 
-.header { margin:0 0 12px; }
+.header 
+{ 
+	width: 80%;
+	margin-left: 0;
+	margin: auto;
+}
+
 .header .logo { float:left; text-decoration:none !important; }
 .header .logo strong { position:absolute; top:-999em; left:-999em; width:0; height:0; font-size:0; line-height:0; text-indent:-999em; overflow:hidden; }
 
@@ -522,7 +531,12 @@ tr.summary-details-excluded { font-style:italic; }
 .header-container .top-container { padding:5px 12px; background:#fff; border:1px solid #bbb; border-width:0 1px 1px; text-align:right; }
 
 /********** < Navigation */
-.nav-container {}
+.nav-container 
+{
+	margin: auto;
+	width: 80%;
+	height: 30px;
+}
 #nav { float:left; margin:15px 0 0 15px; font-size:12px; }
 
 /* All Levels */ /* Style consistent throughout all nav levels */
@@ -727,11 +741,30 @@ tr.summary-details-excluded { font-style:italic; }
 
 /* Category Page ========================================================================= */
 .category-title { margin:0 0 7px; }
-.category-title h1 { padding:3px 0; color:#5b9400; font-size:1.6em; font-weight:bold; line-height:1.25; }
+.category-title h1 
+{ 
+	width: 943px;
+    position: relative;
+    font-size: 22px;
+    top: 18px;
+    left:20px;
+}
+
 .category-image { width:100%; overflow:hidden; margin:0 0 10px; text-align:center; }
 .category-image img {}
-.category-description { margin:0 0 10px; }
-.category-products {}
+
+.category-description 
+{ 
+	font-size: 22px;
+    color:white;
+    font-weight:500;
+}
+
+.category-products 
+{
+	margin: 0 auto;
+	width: 1001px;
+}
 
 /* View Type: Grid */
 .products-grid { position:relative; }
@@ -739,8 +772,8 @@ tr.summary-details-excluded { font-style:italic; }
 .products-grid li.item 
 { 
 	float:left; 
-	width:249px; 
-	height: 249px;
+	width:235px; 
+	height: 235px;
 	padding:0 5px 0px;
 }
 
@@ -767,8 +800,8 @@ tr.summary-details-excluded { font-style:italic; }
 
 .product-info
 {
-	width: 249px;
-	height: 249px;
+	width: 235px;
+	height: 235px;
 	position: absolute;
 	bottom: 0px;
 }
@@ -812,8 +845,8 @@ tr.summary-details-excluded { font-style:italic; }
 
 .catalog-overlay
 {
-	width: 249px;
-	height: 249px;
+	width: 235px;
+	height: 235px;
 	position: absolute;
 	background-color: black;
 	opacity: 0.8;

@@ -40,7 +40,10 @@
         <reference name="top.links">
             <action method="addLink" before="-"><label>Help</label></action>
             <action method="removeLinkByUrl"><url helper="customer/getAccountUrl"/></action> 
-        
+            <remove name="checkout_cart_link"/>       
+            <block type="checkout/links" name="checkout_cart_link_custom">
+                <action method="addCartLink"><prepare/><position>100</position></action>
+            </block>
         </reference>
     </default>
     <catalog_category_default>
@@ -52,6 +55,14 @@
         </reference>
     </catalog_category_default>
     <customer_logged_in>
-        <action method="addLink" translate="label title" module="customer"><label>My Account</label><url helper="customer/getAccountUrl"/><title>My Account</title><prepare/><urlParams/><position>10</position></action>
+        <reference name="top.links">
+            <action method="addLink" translate="label title" module="customer"><label>My Account</label><url helper="customer/getAccountUrl"/><title>My Account</title></action>
+        </reference>
     </customer_logged_in>
+    <customer_logged_out>
+        <reference name="top.links">
+            <action method="removeLinkByUrl"><url helper="customer/getLoginUrl"/></action> 
+            <action method="addLink" translate="label title" module="customer"><label>Log In</label><url helper="customer/getLoginUrl"/><title>Log In</title><prepare/><urlParams/><position>40</position></action>
+        </reference>
+    </customer_logged_out>
 </layout>

@@ -37,7 +37,11 @@
              <remove name="store_switcher"/>
              <remove name="footer_links"/>
         </reference>
+        <reference name="top.links">
+            <action method="addLink" before="-"><label>Help</label></action>
+            <action method="removeLinkByUrl"><url helper="customer/getAccountUrl"/></action> 
         
+        </reference>
     </default>
     <catalog_category_default>
        <reference name="root">
@@ -47,4 +51,7 @@
             <action method="setColumnCount"><columns>4</columns></action>
         </reference>
     </catalog_category_default>
+    <customer_logged_in>
+        <action method="addLink" translate="label title" module="customer"><label>My Account</label><url helper="customer/getAccountUrl"/><title>My Account</title><prepare/><urlParams/><position>10</position></action>
+    </customer_logged_in>
 </layout>

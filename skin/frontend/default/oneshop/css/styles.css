@@ -484,7 +484,10 @@ tr.summary-details-excluded { font-style:italic; }
 .logo { float:left; }
 .header-container 
 {
+
 	background-color: black;
+	margin-top: -16px;
+	margin-bottom: -30px;
 }
 
 .header 
@@ -499,20 +502,22 @@ tr.summary-details-excluded { font-style:italic; }
 
 .header .top-promo { float:left; width:117px; height:30px; margin:12px 10px 0; background:url(../images/bkg_top-promo.gif) 0 0 no-repeat; text-indent:-999em; overflow:hidden; }
 
-.quick-access { background:#444; color:#fff; padding:7px 13px; text-align:right; }
-.quick-access .welcome-msg { display:inline; margin:0; color:#fff; }
-.quick-access .welcome-msg a { color:#ddd; }
+.quick-access { background:#131313; font-size: 12px; font-weight: bolder; color:#ababab; padding:7px 13px; text-align:right; }
+.quick-access .welcome-msg { display:inline; margin:0; color:#ababab; }
+.quick-access .welcome-msg a { color:#ababab; }
 .quick-access .form-language { float:left; }
-.quick-access .form-language label { font-weight:bold; padding-right:5px; color:#fff; vertical-align:middle; }
+.quick-access .form-language label { font-weight:bold; padding-right:5px; color:#ababab; vertical-align:middle; }
 .quick-access .form-language select { padding:0; }
 .quick-access .form-language select.flags option { background-position:4px 50%; background-repeat:no-repeat; padding-left:25px; }
-.quick-access .links { padding-left:8px; }
+.quick-access .links { padding-left:8px; top: 10px;
+position: relative; }
 .quick-access .links,
 .quick-access .links li { display:inline; }
 .quick-access .links li { padding:0 4px 0 1px; }
-.quick-access .links a { color:#ddd; }
-.quick-access .links a { padding:0 7px 0 0; background:url(../images/bkg_pipe1.gif) no-repeat 100% 50%; }
+.quick-access .links a { color:#ababab; }
+.quick-access .links a { padding:0 7px 0 0; background:url(../images/bkg_pipe1.gif) no-repeat 100% 50%; text-decoration: none; color:#ababab;}
 .quick-access .links li.last a { padding:0; background:none; }
+.quick-access a:hover { color:#fff; }
 
 .top-bar { padding:3px 12px 2px 12px; border:1px solid #bbb; border-bottom-color:#dedede; background:#efefef; line-height:21px; }
 .top-bar .breadcrumbs { float:left; width:580px; overflow:hidden; }
@@ -536,8 +541,9 @@ tr.summary-details-excluded { font-style:italic; }
 	margin: auto;
 	width: 80%;
 	height: 30px;
+	background-color:#131313;
 }
-#nav { float:left; margin:15px 0 0 15px; font-size:12px; }
+#nav { float:left; margin:38px 0 0 -10px; font-size:11px; }
 
 /* All Levels */ /* Style consistent throughout all nav levels */
 #nav li { position:relative;text-transform:uppercase; text-align:left;	}
@@ -549,12 +555,12 @@ tr.summary-details-excluded { font-style:italic; }
 
 /* 0 Level */
 #nav li { float:left; margin:1px 8px 11px 1px; padding:3px 8px; }
-#nav li.active a { color:#444; }
-#nav a { float:left; background:url(../images/bkg_nav_top.gif) no-repeat 100% 50%; padding-right:11px; color:#444; font-weight:bold; }
+#nav li.active a { color:#a1a1a1; }
+#nav a { float:left;  padding-right:11px; color:#a1a1a1; font-weight:bold; }
 #nav li.over a,
-#nav a:hover { color:#444; }
+#nav a:hover { color:#533371; }
 #nav li.over,
-#nav li.active { margin:0 7px 10px 0; border:1px solid #bbb; background:#ececec; }
+#nav li.active { color:#533371;}
 
 /* 1st Level */
 #nav ul li,

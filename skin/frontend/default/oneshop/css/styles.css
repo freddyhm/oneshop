@@ -108,7 +108,21 @@ li { list-style-type: none;}
 .col-right { float:right; width:220px; padding:0 0 1px; }
 
 /* 1 Column Layout */
-.col1-layout .main { padding:16px 30px 40px; }
+.col1-layout .main 
+{ 
+	padding:16px 30px 40px; 
+}
+
+/* 1 Column Layout For Cart */
+
+.checkout-cart-index .main 
+{
+	padding:16px 30px 40px; 
+	width: 80%;
+	margin-left: 0;
+	margin: auto;
+}
+
 .col1-layout .col-main { float:none; width:auto; }
 
 /* 2 Columns Layout */
@@ -356,7 +370,10 @@ p.required { font-size:11px; text-align:right; color:#EB340A; }
 }
 
 /* Data Table */
-.data-table { width:100%; }
+.data-table 
+{ 
+	 
+}
 .data-table tr.odd  { background:#fff }
 .data-table tr.even { background:#fcfcfc; }
 .data-table tr.last th,
@@ -818,12 +835,6 @@ position: relative; }
 	border:1px solid #ddd; 
 	border-width:1px 1px 1px 0; 
 	margin:0 0 10px; 
-}
-
-.product-image img
-{
-	width: 100%;
-	height: 100%;
 }
 
 .quickview
@@ -1981,9 +1992,14 @@ position: relative; }
 
 /* HOME PAGE */
 
-#home-slider
+#home-banner
 {
+	width: 100%;
+	height: 450px;
+	background: url("../images/assets/cover.jpg") no-repeat;
+	background-size: 100%;
 	top:33px;
+	position: relative;
 }
 
 .section 
@@ -1994,14 +2010,13 @@ position: relative; }
 
 #bottom-section
 {
-background-color: #eeeeee;
-width: 100%;
-color: grey;
-font-size: 10px;
-position: relative;
-bottom: 27px;
-height: 260px;
-padding-top: 38px;
+	background-color: #eeeeee;
+	width: 100%;
+	color: grey;
+	font-size: 10px;
+	position: relative;
+	bottom: 27px;
+	height: 260px;
 }
 
 

@@ -16,7 +16,7 @@
             </action>
         </reference>
         <reference name="right">
-            <remove name="top.search"/>    
+            <remove name="top.search"/> 
        </reference>
        <reference name="left">
             <remove name="left.newsletter"/>

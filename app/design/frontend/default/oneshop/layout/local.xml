@@ -85,4 +85,9 @@
             </action>
         </reference>
     </customer_logged_out>
+     <checkout_cart_index>
+        <reference name="content">
+            <remove name="checkout.cart.methods.multishipping"/>
+        </reference>
+    </checkout_cart_index>
 </layout>

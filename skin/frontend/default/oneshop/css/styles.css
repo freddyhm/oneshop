@@ -2209,3 +2209,10 @@ position: relative; }
     border: 1px solid black;
     margin: auto;
 }
+
+/* LOGIN POP UP */
+
+.youama-ajaxlogin-cover
+{
+	background: none !important;
+}

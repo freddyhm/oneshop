@@ -2034,7 +2034,6 @@ position: relative; }
 /* ONESHOP Custom */
 
 /* HOME PAGE */
-
 #home-banner
 {
 	width: 100%;
@@ -2109,10 +2108,79 @@ position: relative; }
 
 /* CATALOG PAGE */
 
-
 /* MAIN SLIDER */
 .flexslider 
 {
 	margin: 0 0 60px !important; 
 	background: #fff; 
+}
+
+/* SUPPORT PAGES */
+
+.col-support-pages
+{
+
+	width: 100%;
+	float: left;
+}
+
+#page-list li:hover
+{
+    background-color: grey;
+}
+
+#page-content 
+{
+    width: 1001px;
+    margin-left: 0;
+    margin: auto;
+}
+
+#page-list 
+{
+	width: 19%;
+	height: 476px;
+	float: left;
+	text-transform: uppercase;
+	background-color: #f6f6f6;
+	font-size: 11px;
+	font-weight: 500;
+}
+
+#page-list ul
+{
+    list-style-type: none;
+    margin-left: 0;
+    background-color: lightgrey;
+}
+
+#page-list li
+{
+    height: 41px;
+    text-align: center;
+    line-height: 3;
+    margin-bottom: 0px;
+
+}
+
+#page-section 
+{
+    width: 80%;
+    border: 1px solid black;
+    float: right;
+    height: 700px;
+}
+
+#page-pic 
+{
+    width: 100%;
+    border: 1px solid black;
+    height: 130px;
+}
+
+#page-message
+{
+    width: 80%;
+    border: 1px solid black;
+    margin: auto;
 }

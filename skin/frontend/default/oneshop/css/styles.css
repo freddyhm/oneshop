@@ -1990,6 +1990,13 @@ position: relative; }
 	height:38px;
 }
 
+#social 
+{
+    opacity: 0.8;
+    position: absolute;
+    top: 6px;
+}
+
 .footer a { color:#444; }
 
 .footer .f-left { width:520px; }

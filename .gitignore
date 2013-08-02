@@ -24,9 +24,6 @@ php.ini.sample
 RELEASE_NOTES.txt
 robots.txt
 shell
-app
-!/app/design/frontend/default/oneshop/
-skin
-!/skin/frontend/default/oneshop/
+
 var
 EOF

@@ -131,6 +131,11 @@ li { list-style-type: none;}
 
 .col1-layout .col-main { float:none; width:auto; }
 
+.category-shop .col-main
+{
+	float: left;
+}
+
 /* 2 Columns Layout */
 .col2-left-layout .col-main { float:right; }
 .col2-right-layout .col-main {}
@@ -895,7 +900,7 @@ position: relative; }
 	right: 17px;
 }
 
-.price-box .price 
+.category-products .price 
 {
 	font-size: 13px;
 	font-weight: bold;
@@ -1161,11 +1166,32 @@ position: relative; }
 .product-essential h2 { font:bold 12px/1.25 Arial, Helvetica, sans-serif; }
 
 .product-collateral {}
-.product-collateral h2 { font-size:19px; font-weight:normal; line-height:1.15; }
+.product-collateral h2 
+{ 
+	font-size:19px; 
+	font-weight:normal;
+	line-height:1.15;
+	display: none; 
+}
 .product-collateral .box-collateral {}
 
 /* Product Images */
-.product-view .product-img-box { float:left; width:302px; }
+.product-view .product-img-box 
+{ 
+	float:right; 
+	width:600px; 
+}
+
+.product-view .more-views
+{
+	position: relative;
+	right: 355px;
+	bottom: 232px;
+	width: 340px;
+}
+
+
+
 .col3-layout .product-view .product-img-box { float:none; margin:0 auto; }
 .product-view .product-img-box .product-image { margin:0 0 10px; border:1px solid #cacaca; }
 .product-view .product-img-box .product-image-zoom { position:relative; width:300px; height:300px; overflow:hidden; z-index:9; }
@@ -1190,13 +1216,23 @@ position: relative; }
 
 /* Product Shop */
 .product-view .product-shop { float:right; width:363px; }
-.col1-layout .product-view .product-shop { float:right; width:576px; }
+.col1-layout .product-view .product-shop 
+{ 
+	float:left; 
+	width:358px;
+	height: 400px;
+	background-color: black;
+	opacity: 0.8; 
+}
 .col3-layout .product-view .product-shop { float:none; width:auto; }
 .product-view .product-shop .product-name { margin:0 0 5px; }
 .product-view .product-shop .product-name h1 { font:bold 13px/1.25 Arial, Helvetica, sans-serif; }
 .product-view .product-shop .availability { margin:10px 0; }
 .product-view .product-shop .short-description { margin:10px 0; }
-.product-view .product-shop .price-box { margin:10px 0; }
+.product-view .product-shop .price-box 
+{ 
+	margin-bottom: 116px;
+}
 .product-view .product-shop .add-to-links { margin:0; }
 .product-view .product-shop .add-to-links { text-align:right; }
 .product-view .product-shop .add-to-links li { display:inline; margin-left:12px; }

@@ -1216,6 +1216,13 @@ position: relative; }
 
 /* Product Shop */
 .product-view .product-shop { float:right; width:363px; }
+
+.category-shop .main
+{
+	margin-top:26px; 
+}
+
+
 .col1-layout .product-view .product-shop 
 { 
 	float:left; 

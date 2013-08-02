@@ -1,6 +1,6 @@
 jQuery(document).ready(function($){
 
- 
+  
 	//@all pages w/nav, color link when selected, except blog
 	if($("#nav").height() > 0){
 

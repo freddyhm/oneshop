@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->getLang() ?>" lang="<?php echo $this->getLang() ?>">
+<head>
+<?php echo $this->getChildHtml('head') ?>
+</head>
+<body<?php echo $this->getBodyClass()?' class="'.$this->getBodyClass().'"':'' ?>>
+<?php echo $this->getChildHtml('after_body_start') ?>
+<div class="wrapper">
+    <?php echo $this->getChildHtml('global_notices') ?>
+    <div class="page">
+        <?php echo $this->getChildHtml('header') ?>
+        <div class="main-container col1-layout">
+            <div class="main">
+                <?php echo $this->getChildHtml('breadcrumbs') ?>
+                <div class="col-support-pages">
+                    <div id="page-content">
+                        <?php echo $this->getChildHtml('global_messages') ?>
+                        <div id="page-list">
+                            <img alt="oneshop support page icon" id="page-oneshop-icon">
+                            <ul>
+                                <a href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB); ?>help/"><li id="help-link">Help</li></a>`
+                                <a href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB); ?>about/"><li id="about-link">About</li></a>
+                                <a href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB); ?>/faq/"><li id="faq-link">FAQ</li></a>
+                                <a href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB); ?>shipping/"><li id="shipping-link">Shipping</li></a>
+                                <a href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB); ?>return-policy/"><li id="return-link">Return Policy</li></a>
+                                <a href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB); ?>terms-of-service/"><li id="tos-link">Terms of service</li></a>
+                                <a href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB); ?>privacy-policy/"><li id="privacy-link">Privacy Policy</li></a>
+                                <a href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB); ?>contact-us/"><li id="contact-link">Contact Us</li></a>
+                            </ul>
+                        </div>
+                        <div id="page-section">
+                            <div id="page-pic">
+                                <h1 class="TitleHeading"><?php echo $this->getLayout()->getBlock('head')->getTitle();?></h1>
+                            </div>
+                            <div id="page-message">
+                                    <?php echo $this->getChildHtml('content') ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <?php echo $this->getChildHtml('footer') ?>
+        <?php echo $this->getChildHtml('before_body_end') ?>
+    </div>
+</div>
+<?php echo $this->getAbsoluteFooter() ?>
+</body>
+</html>

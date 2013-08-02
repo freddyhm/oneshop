@@ -25,8 +25,8 @@ RELEASE_NOTES.txt
 robots.txt
 shell
 app
-!app/design/frontend/default/oneshop/*
+!/app/design/frontend/default/oneshop/
 skin
-!skin/frontend/default/oneshop/*
+!/skin/frontend/default/oneshop/
 var
 EOF

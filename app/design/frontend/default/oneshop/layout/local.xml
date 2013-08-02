@@ -38,13 +38,13 @@
              <remove name="footer_links"/>
         </reference>
         <reference name="top.links">
-            <action method="addLink" before="-"><label>Help</label></action> 
+            <action method="addLink" before="-">
+                <label>Help</label>
+                <url>/help</url>
+            </action> 
             <action method="addLink">
                 <label>Share &amp; Earn</label>
-                <url>share-earn</url>
-                <title>Share &amp; Earn</title>
-                <prepare/>
-                <position>40</position>
+                <url>/share-earn</url>
             </action>
             <action method="removeLinkByUrl">
                 <url helper="customer/getAccountUrl"/>
@@ -74,6 +74,7 @@
     </customer_logged_in>
     <customer_logged_out>
         <reference name="top.links">
+             <action method="removeLinkByUrl"><url helper="customer/getRegisterUrl"/></action> 
             <action method="removeLinkByUrl"><url helper="customer/getLoginUrl"/></action> 
             <action method="addLink" translate="label title" module="customer">
                 <label>Log In</label>
@@ -83,6 +84,7 @@
                 <urlParams/>
                 <position>40</position>
             </action>
+
         </reference>
     </customer_logged_out>
      <checkout_cart_index>

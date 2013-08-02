@@ -35,8 +35,13 @@
 <?php if($_menu): ?>
 <div class="nav-container">
     <ul id="nav">
-    	<li><a href="/">Home</a></li>
+    	<li class="level0 nav-0 first level-top">
+    		<a href="/" class="level-top">
+    			<span>Home</span>
+    		</a>
+    	</li>
         <?php echo $_menu ?>
+        <li><a href="/blog">Read</a></li>
     </ul>
 </div>
 <?php endif ?>

@@ -952,8 +952,14 @@ position: relative; }
 {
 	width: 100% !important;
 	position: absolute;
-	z-index: 1101;
 	height: 100%;
+}
+
+#fancybox-content .pagination 
+{
+	z-index:1102 !important;
+	top:131px !important;
+	margin-left: 29px;
 }
 
 #fancybox-content .input-text

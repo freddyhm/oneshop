@@ -100,5 +100,10 @@
             <remove name="product_tag_list"/>
         </reference>
     </catalog_product_view>
+    <customer_account>
+        <reference name="customer_account_navigation">
+       
+        </reference>
+    </customer_account>
 
 </layout>

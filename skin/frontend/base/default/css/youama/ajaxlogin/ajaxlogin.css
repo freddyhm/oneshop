@@ -35,14 +35,15 @@
 }
 
 .youama-login-window { 
-    display:none;
-    width: 320px !important;
-    height: 350px;
+    display: none;
+	position: absolute;
+	width: 320px !important;
+	height: 263px;
 	background-color: #f2f2f2 !important;
-	margin-top: -64px !important;
-	left: 735px !important;
+	left: 550px !important;
 	z-index: 9998 !important;
 	box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 10px 0px !important;
+	top: 56px;
 }
 
 .youama-window-outside { margin:20px; position:relative; }

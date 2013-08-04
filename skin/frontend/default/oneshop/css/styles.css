@@ -101,8 +101,24 @@ li { list-style-type: none;}
 
 
 /* Layout ================================================================================ */
-.wrapper {}
-.page { width:100%; margin:15px auto 0; text-align:left; }
+.wrapper 
+{
+
+}
+
+.page 
+{ 
+	width:1000px; 
+	margin:15px auto 0; 
+	text-align:left; 
+}
+
+/* Home page is full width for slider */
+.cms-home .page
+{
+	width: 100%;
+}
+
 .page-print { background:#fff; padding:25px 30px; text-align:left; }
 .page-empty { background:#fff; padding:20px; text-align:left; }
 .page-popup { background:#fff; padding:25px 30px; text-align:left; }
@@ -560,11 +576,10 @@ tr.summary-details-excluded { font-style:italic; }
 
 /* Header ================================================================================ */
 .logo { float:left; }
+
 .header-container 
 {
-
 	background-color: #131313;
-	margin-top: -16px;
 	margin-bottom: -30px;
 }
 
@@ -2113,11 +2128,17 @@ line-height: 4;
 	height:38px;
 }
 
+.footer
+{
+	width: 1000px;
+	margin: auto;
+}
+
 #social 
 {
-position: absolute;
-top: 9px;
-left: 225px;
+	top: 10px;
+	position: relative;
+	float: left;
 }
 
 .footer a { color:#ababab; }
@@ -2129,10 +2150,9 @@ left: 225px;
 .footer ul 
 { 
 	display: inline;
-width: 650px;
-position: relative;
-top: 12px;
-left: 387px;
+	position: absolute;
+	top: 14px;
+	left: 200px;
 }
 .footer li { display:inline; padding:0 8px 0 0; margin:0 3px 0 0;  }
 .footer .links li.last { background:none !important; padding-right:0 !important; }

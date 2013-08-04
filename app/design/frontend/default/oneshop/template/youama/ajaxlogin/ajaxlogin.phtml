@@ -49,7 +49,7 @@
                     </h3>
                 </div>
                 <?php if(!Mage::getSingleton('customer/session')->isLoggedIn()):?>
-                <a href="#" onclick="return fblogin();" class="fb_button_ps"><img src="<?php echo $this->helper('facebookfree/active')->getLoginImg()?>" alt="<?php echo $this->__('Connect with Facebook')?>" />
+                <a href="#" id="login-fb-btn" onclick="return fblogin();" class="fb_button_ps"><img src="<?php echo $this->helper('facebookfree/active')->getLoginImg()?>" alt="<?php echo $this->__('Connect with Facebook')?>" />
                 </a>
                 <?php endif?>
                 <div class="youama-window-box first">

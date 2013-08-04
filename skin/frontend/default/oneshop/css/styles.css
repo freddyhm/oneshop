@@ -2419,3 +2419,8 @@ right: 20px;
 {
 	background: none !important;
 }
+
+#login-fb-btn
+{
+	position: relative;
+}

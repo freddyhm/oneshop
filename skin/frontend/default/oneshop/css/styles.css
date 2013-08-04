@@ -24,7 +24,7 @@
  */
 
 /* Reset ================================================================================= */
-* { margin:0; padding:0; }
+* { margin:0; padding:0; } 
 
 body          { background:#f2f2f2 url(../images/bkg_body.gif) 0 0 repeat; text-transform: uppercase; font:11px/1.55; font-family: Helvetica; color:#444; text-align:center; }
 
@@ -124,7 +124,7 @@ li { list-style-type: none;}
 .checkout-cart-index .main 
 {
 	padding:16px 30px 40px; 
-	width: 80%;
+	width: 1000px;
 	margin-left: 0;
 	margin: auto;
 }
@@ -526,7 +526,7 @@ tr.summary-details-excluded { font-style:italic; }
 
 .header 
 { 
-	width: 80%;
+	width: 1000px;
 	margin-left: 0;
 	margin: auto;
 }
@@ -574,7 +574,7 @@ position: relative; }
 .nav-container 
 {
 	margin: auto;
-	width: 80%;
+	width: 1000px;
 	height: 30px;
 	background-color:#131313;
 }
@@ -1998,23 +1998,31 @@ position: relative; }
 
 #social 
 {
-    opacity: 0.8;
-    position: absolute;
-    top: 6px;
+position: absolute;
+top: 9px;
+left: 225px;
 }
 
-.footer a { color:#444; }
+.footer a { color:#ababab; }
+.footer a:hover { color:#fff; }
 
 .footer .f-left { width:520px; }
 .footer .f-right { width:429px; }
 
-.footer ul { display:inline; width: 650px; position: relative; top: 10px; left: 120px;}
-.footer li { display:inline; background:url(../images/bkg_pipe1.gif) 100% 50% no-repeat; padding:0 5px 0 0; margin:0 3px 0 0; }
+.footer ul 
+{ 
+	display: inline;
+width: 650px;
+position: relative;
+top: 12px;
+left: 387px;
+}
+.footer li { display:inline; padding:0 8px 0 0; margin:0 3px 0 0;  }
 .footer .links li.last { background:none !important; padding-right:0 !important; }
-.footer .bugs { margin:0; color:#666; }
-.footer .bugs a { font-weight:bold; color:#444; }
-.footer address { color:#666; }
-.footer address a { color:#444; }
+.footer .bugs { margin:0; color:#ababab; }
+.footer .bugs a { font-weight:bold; color:#fff; }
+.footer address { color:#ababab; }
+.footer address a { color:#fff; }
 
 .footer .form-subscribe { margin:8px 0; }
 .footer .form-subscribe label,
@@ -2246,7 +2254,7 @@ position: relative; }
 
 #page-section 
 {
-    width: 80%;
+    width: 1000px;
     border: 1px solid black;
     float: right;
     height: 700px;
@@ -2261,7 +2269,7 @@ position: relative; }
 
 #page-message
 {
-    width: 80%;
+    width: 1000px;
     border: 1px solid black;
     margin: auto;
 }

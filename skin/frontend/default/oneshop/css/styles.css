@@ -26,7 +26,7 @@
 /* Reset ================================================================================= */
 * { margin:0; padding:0; } 
 
-body          { background:#f2f2f2 url(../images/bkg_body.gif) 0 0 repeat; text-transform: uppercase; font:11px/1.55; font-family: Helvetica; color:#444; text-align:center; }
+body          { background:#000; text-transform: uppercase; font:11px/1.55; font-family: Helvetica; color:#444; text-align:center; }
 
 img           { border:0; vertical-align:top; }
 

@@ -26,7 +26,13 @@
 /* Reset ================================================================================= */
 * { margin:0; padding:0; } 
 
-body          { background:#f2f2f2 url(../images/bkg_body.gif) 0 0 repeat; text-transform: uppercase; font:11px/1.55; font-family: Helvetica; color:#444; text-align:center; }
+body          
+{ 
+			text-transform: uppercase; 
+			font:11px/1.55; 
+			font-family: Helvetica; 
+			color:#444; text-align:center; 
+}
 
 img           { border:0; vertical-align:top; }
 
@@ -37,7 +43,7 @@ a:hover       { color:#63487c; text-decoration:none; }
 /* Headings */
 h1          { font-size:2em; font-weight:normal; line-height:1.15; }
 h2          { font-size:1.5em; line-height:1.25; margin-bottom:.45em; }
-h3          { font-size:1.35em; line-height:1.25; margin-bottom:.45em; }
+h3          { font-1:size.35em; line-height:1.25; margin-bottom:.45em; }
 h4          { font-size:1.05em; line-height:1.35; margin-bottom:.45em; }
 h5          { font-size:1.05em; line-height:1.35; margin-bottom:.45em; }
 h6          { font-size:1em; line-height:1.35; margin-bottom:1em; }
@@ -109,7 +115,7 @@ li { list-style-type: none;}
 .page 
 { 
 	width:1000px; 
-	margin:15px auto 0; 
+	margin:0px auto 0; 
 	text-align:left; 
 }
 
@@ -2150,9 +2156,9 @@ line-height: 4;
 .footer ul 
 { 
 	display: inline;
-position: relative;
-top: 14px;
-left: 6px;
+	position: absolute;
+	top: 14px;
+	left: 200px;
 }
 .footer li { display:inline; padding:0 8px 0 0; margin:0 3px 0 0;  }
 .footer .links li.last { background:none !important; padding-right:0 !important; }
@@ -2262,7 +2268,7 @@ left: 6px;
 #home-banner
 {
 	width: 100%;
-	height: 341px;
+	height: 450px;
 	background: url("../images/assets/cover.jpg") no-repeat;
 	background-size: 100%;
 	top:41px;
@@ -2278,14 +2284,15 @@ left: 6px;
 
 #bottom-section
 {
-	background-color: #fff;
-	width: 1000px;
-	color: grey;
-	font-size: 10px;
-	position: relative;
-	bottom: -44px;
-	height: 275px;
-	margin: auto;
+background-color: #fff;
+width: 1000px;
+color: grey;
+font-size: 10px;
+position: relative;
+bottom: -44px;
+height: 275px;
+margin: auto;
+
 }
 
 

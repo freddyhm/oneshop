@@ -112,7 +112,7 @@ li { list-style-type: none;}
 /* Base Columns */
 .col-left { float:left; width:220px; padding:0 0 1px; }
 .col-main { float:left; width:686px; padding:0 0 1px; }
-.col-right { float:right; width:220px; padding:0 0 1px; }
+.col-right { float:right; width:300px; padding:0 0 1px; }
 
 /* 1 Column Layout */
 .col1-layout .main 
@@ -364,9 +364,9 @@ p.required { font-size:11px; text-align:right; color:#EB340A; }
 	float: right;
 right: 210px;
 position: relative;
-font-size: 8px;
+font-size: 10px;
 font-weight: 100;
-opacity: 0.5;
+opacity: 0.4;
 }
 
 /* Page Heading */
@@ -584,7 +584,7 @@ position: relative; }
 .quick-access .links li { display:inline; }
 .quick-access .links li { padding:0 4px 0 1px; }
 .quick-access .links a { color:#ababab; }
-.quick-access .links a { padding:0 7px 0 0; background:url(../images/bkg_pipe1.gif) no-repeat 100% 50%; text-decoration: none; color:#ababab;}
+.quick-access .links a { padding:0 7px 0 0; text-decoration: none; color:#ababab;}
 .quick-access .links li.last a { padding:0; background:none; }
 .quick-access a:hover { color:#fff; }
 
@@ -862,6 +862,8 @@ line-height: 4;
 	margin-right: 34px;
 	font-weight:bolder;
 	color:white;
+	position: relative;
+	top:-14px;
 }
 
 .category-image { width:100%; overflow:hidden; margin:0 0 10px; text-align:center; }
@@ -874,7 +876,7 @@ line-height: 4;
 	font-weight: 700;
 	width: 943px;
 	position: relative;
-	top: 18px;
+	top: 21px;
 	left: 20px;
 }
 
@@ -1463,6 +1465,7 @@ line-height: 4;
 {
 	margin:auto ;
 	float: none;
+	width:700px;
 }
 
 /* Checkout Types */
@@ -1755,7 +1758,14 @@ line-height: 4;
 .opc { position:relative; }
 .opc li.section {}
 
-.opc .step-title { border:1px solid #ddd; border-top-color:#fff; background:#eee; padding:4px 8px 6px; text-align:right; }
+.opc .step-title 
+{
+	border: 1px solid #E2E2E2;
+	border-top-color: #eee;
+	background: #eee;
+	padding: 4px 8px 6px;
+	text-align: right;
+}
 .opc .step-title .number { float:left; background:#fff; border:1px solid #fff; padding:0 3px; margin:0 5px 0 0; font:normal 11px/12px arial, helvetica, sans-serif; color:#444; }
 .opc .step-title h2 { float:left; margin:0; font:bold 12px/14px Arial, Helvetica, sans-serif; color:#999; }
 .opc .step-title a { display:none; float:right; font-size:11px; line-height:16px; }
@@ -1765,7 +1775,15 @@ line-height: 4;
 .opc .allow .step-title h2 { color:#fff; }
 .opc .allow .step-title a { display:block; font-size:10px; color:#fff; text-transform:uppercase; }
 
-.opc .active .step-title { background:#e46b00; border-color:#e46b00; border-top-color:#fff; padding-bottom:5px; color:#fff; cursor:default; }
+.opc .active .step-title 
+{
+	background: #533371;
+	border-color: #533371;
+	border-top-color: #533371;
+	padding-bottom: 5px;
+	color: #fff;
+	cursor: pointer;
+}
 .opc .active .step-title .number {}
 .opc .active .step-title h2 { color:#fff; }
 .opc .active .step-title a { display:none; }
@@ -2225,18 +2243,20 @@ left: 387px;
 {
     width: 33%;
     text-align: center;
-    padding-top:50px;
+    padding-top:20px;
 }
 
 #bottom-section
 {
-	background-color: #fff;
-	width: 100%;
-	color: grey;
-	font-size: 10px;
-	position: relative;
-	bottom: 45px;
-	height: 270px;
+background-color: #fff;
+width: 1000px;
+color: grey;
+font-size: 10px;
+position: relative;
+bottom: -44px;
+height: 275px;
+margin: auto;
+
 }
 
 
@@ -2358,7 +2378,6 @@ right: 20px;
 #page-pic 
 {
     width: 100%;
-    border: 1px solid #F5F5F5;
     height: 130px;
 
 }

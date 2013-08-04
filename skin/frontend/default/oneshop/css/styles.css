@@ -2423,4 +2423,8 @@ right: 20px;
 #login-fb-btn
 {
 	position: relative;
+	background-color: #3b5998;
+	width: 297px;
+	height: 40px;
+	left: 10px;
 }

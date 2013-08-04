@@ -48,7 +48,10 @@
                         <?php echo $this->__('Login') ?>
                     </h3>
                 </div>
-                
+                <?php if(!Mage::getSingleton('customer/session')->isLoggedIn()):?>
+                <a href="#" onclick="return fblogin();" class="fb_button_ps"><img src="<?php echo $this->helper('facebookfree/active')->getLoginImg()?>" alt="<?php echo $this->__('Connect with Facebook')?>" />
+                </a>
+                <?php endif?>
                 <div class="youama-window-box first">
                     <div class="youama-window-content">
                         <div class="input-fly youama-showhideme">
@@ -61,9 +64,6 @@
                             <input type="password" placeholder="<?php echo $this->__('Password') ?>" id="youama-password" name="youama-password" value="" />
                             <div class="youama-ajaxlogin-error err-password err-dirtypassword err-nopassword err-longpassword"></div>
                         </div>
-                        <?php if(!Mage::getSingleton('customer/session')->isLoggedIn()):?>
-    <a href="#" onclick="return fblogin();" class="fb_button_ps"><img src="<?php echo $this->helper('facebookfree/active')->getLoginImg()?>" alt="<?php echo $this->__('Connect with Facebook')?>" /></a>
-<?php endif?>
                     </div>
                 </div>
                 

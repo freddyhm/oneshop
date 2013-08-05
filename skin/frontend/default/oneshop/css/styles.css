@@ -139,14 +139,14 @@ li { list-style-type: none;}
 /* 1 Column Layout */
 .col1-layout .main 
 { 
-	padding:16px 30px 40px; 
+	padding:16px 0px 40px; 
 }
 
 /* 1 Column Layout For Cart */
 
 .checkout-cart-index .main 
 {
-	padding:16px 30px 40px; 
+	padding:16px 0px 40px; 
 	width: 1000px;
 	margin-left: 0;
 	margin: auto;
@@ -2158,7 +2158,8 @@ line-height: 4;
 	display: inline;
 	position: absolute;
 	top: 14px;
-	left: 200px;
+	left: 380px;
+
 }
 .footer li { display:inline; padding:0 8px 0 0; margin:0 3px 0 0;  }
 .footer .links li.last { background:none !important; padding-right:0 !important; }
@@ -2267,7 +2268,7 @@ line-height: 4;
 /* HOME PAGE */
 #home-banner
 {
-	width: 100%;
+	width: 1434px;
 	height: 450px;
 	background: url("../images/assets/cover.jpg") no-repeat;
 	background-size: 100%;

@@ -2454,3 +2454,8 @@ right: 20px;
 	height: 40px;
 	left: 10px;
 }
+
+.register-boxes
+{
+	display: none;
+}

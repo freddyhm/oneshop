@@ -107,4 +107,19 @@ jQuery(document).ready(function($){
 		$(pageElementId).css("background-color", "grey");
 		$("#page-pic").css("background-image", bannerImg);
 	}
+
+	$(".switch-link").click(function(){
+
+		var displayBoxes = $(".register-boxes").css("display");
+		if(displayBoxes == "block")
+		{
+			$(".register-boxes").hide(function(){
+				$(".login-boxes").show();
+			});
+		}else{
+			$(".login-boxes").hide(function(){
+				$(".register-boxes").show();
+			});
+		}
+	});	
 });

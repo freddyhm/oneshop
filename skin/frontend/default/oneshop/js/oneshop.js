@@ -104,7 +104,8 @@ jQuery(document).ready(function($){
 				break;
 		}
 
-		$(pageElementId).css("background-color", "grey");
+		$(pageElementId).css("background-color", "#e9e9e9");
+		$(pageElementId).css("color", "#533371");
 		$("#page-pic").css("background-image", bannerImg);
 	}
 
@@ -115,7 +116,7 @@ jQuery(document).ready(function($){
 		{
 			$(".register-boxes").hide(1,function(){
 				$(".login-boxes").show(1);
-				$(".youama-login-window").css("height", "370px");
+				$(".youama-login-window").css("height", "400px");
 			});
 		}else{
 			$(".login-boxes").hide(1,function(){

@@ -98,9 +98,11 @@
                     </div>
                     <?php if(!Mage::getSingleton('customer/session')->isLoggedIn()):?>
                     <a href="#" id="register-fb-btn" onclick="return fblogin();" class="fb_button_ps">
-                        <div id="fb-login">Login with Facebook</div>
+                        <div id="fb-login">Connect with Facebook</div>
                     </a>
                     <?php endif?>
+
+                    <div id="register-divider"><hr id="register divider"></hr></div>
     
                         <div class="youama-window-content">
                             <div class="input-fly youama-showhideme">
@@ -138,7 +140,7 @@
                     </div>
                     <div class="youama-window-box last">
                         <div class="youama-window-content box-contents youama-showhideme">
-                            <button type="button" class="button btn-proceed-checkout btn-checkout youama-ajaxlogin-button">
+                            <button type="button" class="register-btn">
                                 <span>
                                     <span>
                                         <?php echo $this->__('Register') ?>

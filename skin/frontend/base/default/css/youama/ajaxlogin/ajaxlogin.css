@@ -73,7 +73,8 @@
 }
 .youama-window-box { }
 .youama-window-subtitle p { margin:20px 0 0 0; float:left; width:100%; font-size:14px; font-weight:bold; color:#aaa; }
-.youama-window-box .input-fly { padding:5px 0; float:left; width:100% }
+.youama-window-box .input-fly { padding:5px 0; float:left; width:100%; padding-bottom:0px; }
+.youama-window-box .register-fly { padding:0px 0; float:left; width:100% }
 .youama-window-box .input-fly label { font-size:14px; float:left; width:50%; line-height:26px; display:none; }
 .youama-window-box .input-fly input 
 {
@@ -104,7 +105,7 @@
 .youama-window-box .input-fly .youama-ajaxlogin-error { text-align:right; }
 .youama-window-box .input-fly-checkbox .youama-ajaxlogin-error { text-align:left; float:left; }
 .youama-window-box .box-contents { float:right; margin-bottom:20px; }
-.youama-window-box .box-contents-button { width:297px; margin-top:5px; }
+.youama-window-box .box-contents-button { width:297px; margin-top:20px; }
 .youama-window-box .box-contents-button button { float:right; }
 .youama-window-box .youama-forgot-password 
 {

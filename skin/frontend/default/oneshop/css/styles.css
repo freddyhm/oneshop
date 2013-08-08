@@ -2505,6 +2505,17 @@ right: 20px;
 	opacity: 0.2;
 }
 
+#register-divider
+{
+	position: relative;
+	padding-top: 41px;
+	padding-bottom: 15px;
+	top: -5px;
+	width: 295px;
+	left: -9px;
+	opacity: 0.2;
+}
+
 .btn-login-ajaxlogin
 {
 	position: relative;
@@ -2568,3 +2579,15 @@ right: 20px;
 
 }
 
+.register-btn
+{
+	position: relative;
+	background-color: #533371;
+	width: 297px;
+	height: 40px;
+	left: 10px;
+	top: 8px;
+	border: none;
+	font-weight: bolder;
+	color: white;
+}

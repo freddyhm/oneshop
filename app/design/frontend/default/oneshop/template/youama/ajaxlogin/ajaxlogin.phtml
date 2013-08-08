@@ -297,9 +297,10 @@
                             $('.youama-' + windowName + '-window').delay(counter * 50).fadeOut();
                             $('.youama-ajaxlogin-cover').delay(counter * 50).fadeOut(function(){
 
-                                // default to login on exit
-                                $(".login-boxes").css("display", "block");
+                                // default to login on exit, resize window
                                 $(".register-boxes").css("display", "none");
+                                $(".login-boxes").css("display", "block");
+                                $(".youama-login-window").css("height", "400px");
                             }); 
                         }
                     }

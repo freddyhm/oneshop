@@ -2400,9 +2400,10 @@ margin: auto;
 
 .col-support-pages
 {
-
 	width: 100%;
 	float: left;
+	top: -13px;
+	position: relative;
 }
 
 #page-list li:hover
@@ -2465,7 +2466,7 @@ right: 20px;
 #page-pic 
 {
     width: 100%;
-    height: 130px;
+    height: 166px;
 
 }
 
@@ -2488,7 +2489,7 @@ right: 20px;
 	line-height: 1.15;
 	position: relative;
 	text-align: center;
-	top: 30px;
+	top: 48px;
 }
 
 /* LOGIN POP UP */

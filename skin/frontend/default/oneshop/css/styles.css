@@ -1010,6 +1010,12 @@ line-height: 4;
 
 /* QUICKVIEW POP-UP */
 
+/* remove button for pop up */
+#md_quickview_handler
+{
+	background: none !important; 
+}
+
 #fancybox-content .price
 {
 	top:0px;

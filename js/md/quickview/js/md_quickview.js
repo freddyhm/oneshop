@@ -54,10 +54,10 @@ jQuery(function($) {
 		// }
 		var baseUrl = EM.Quickview.BASE_URL + mypath;
 		
-		var _qsHref = "<a id=\"md_quickview_handler\" href=\"#\" style=\"position:absolute;top:0;left:0\"><img style=\"display:none;\" alt=\"quickview\" src=\""+EM.Quickview.QS_IMG+"\" /></a>";
+		var _qsHref = "<a id=\"md_quickview_handler\" href=\"#\" style=\"position:absolute;top:0;left:0\"><div class='pop-up-link'>one</div></a>";
 		$(document.body).append(_qsHref);
 		
-		var qsHandlerImg = $('#md_quickview_handler img');
+		var qsHandlerImg = $('#md_quickview_handler');
 
 		$.each(listprod, function(index, value) { 
 			var reloadurl = baseUrl;

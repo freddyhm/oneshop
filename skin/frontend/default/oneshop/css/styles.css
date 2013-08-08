@@ -26,7 +26,6 @@
 /* Reset ================================================================================= */
 * { margin:0; padding:0; } 
 
-
 body          
 { 
 			text-transform: uppercase; 
@@ -2514,10 +2513,9 @@ right: 20px;
 	line-height: 38px;
 }
 
-.btn-register-ajaxlogin
+.switch-link
 {
 	position: relative;
-	background-color: #1d1d1d;
 	width: 148px;
 	height: 40px;
 	left: 10px;
@@ -2531,4 +2529,14 @@ right: 20px;
 	font-weight: bolder;
 	text-align: center;
 	line-height: 38px;
+}
+
+#login-link
+{
+	background-color: #533371;
+}
+
+#register-link
+{
+	background-color: #1d1d1d;
 }

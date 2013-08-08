@@ -110,15 +110,17 @@ jQuery(document).ready(function($){
 
 	$(".switch-link").click(function(){
 
-		var displayBoxes = $(".register-boxes").css("display");
-		if(displayBoxes == "block")
+		var displayRegisterBoxes = $(".register-boxes").css("display");
+		if(displayRegisterBoxes == "block")
 		{
-			$(".register-boxes").hide(function(){
-				$(".login-boxes").show();
+			$(".register-boxes").hide(1,function(){
+				$(".login-boxes").show(1);
+				$(".youama-login-window").css("height", "370px");
 			});
 		}else{
-			$(".login-boxes").hide(function(){
-				$(".register-boxes").show();
+			$(".login-boxes").hide(1,function(){
+				$(".register-boxes").show(1);
+				$(".youama-login-window").css("height", "525px");
 			});
 		}
 	});	

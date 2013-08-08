@@ -964,10 +964,14 @@ line-height: 4;
 	color: #fff;
 	text-decoration: none;
 	text-transform: uppercase;
-	font-weight: lighter !important;
-	font-size: 17px;
+	font-weight: normal !important;
+	font-size: 18px;
 	text-align: center;
 	font-family: "Helvetica" !important;
+	width: 200px;
+	position: relative;
+	top: 10px;
+	left: 17px;
 }
 .products-grid .product-name a:hover { text-decoration:none; }
 .products-grid .price-box { margin:5px 0; }
@@ -1155,11 +1159,28 @@ line-height: 4;
 .price { white-space:nowrap !important; }
 
 .price-box { margin:5px 0 10px; }
-.price-box .price { font-size:13px; font-weight:bold; color:#396f00; }
+.price-box .price 
+{
+	font-size: 14px;
+	font-weight: 100;
+	color: #fff;
+	float: right;
+	position: relative;
+	left: -15px;
+}
 
 /* Regular price */
 .regular-price { color:#396f00; }
-.regular-price .price { font-size:13px; font-weight:bold; color:#396f00; }
+.regular-price .price
+{
+	font-size: 14px;
+	font-weight: 100;
+	color: #fff;
+	float: right;
+	position: relative;
+	left: -15px;
+}
+
 
 /* Old price */
 .old-price { margin:0; }
@@ -2564,15 +2585,15 @@ right: 20px;
 
 #login-link
 {
-	left: -10px;
+	left: -47px;
 	top: -110px;
-	width: 32px;
 	height: 32px;
 	cursor: pointer;
 	position: relative;
 	font-size: 9px;
 	color: #533371 !important;
 	font-weight:lighter;
+	float:left;
 }
 
 #register-link

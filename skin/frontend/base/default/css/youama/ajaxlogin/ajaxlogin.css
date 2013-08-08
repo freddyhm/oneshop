@@ -38,7 +38,7 @@
     display: none;
 	position: absolute;
 	width: 317px !important;
-	height: 370px;
+	height: 400px;
 	background-color: #f2f2f2 !important;
 	z-index: 9998 !important;
 	box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 10px 0px !important;
@@ -52,12 +52,12 @@
 .youama-window-outside { margin:20px; position:relative; }
 .youama-close 
 {
-	right: -35px;
+	right: -283px;
 	top: -15px;
 	width: 32px;
 	height: 32px;
 	cursor: pointer;
-	position: absolute;
+	position: relative;
 	font-size: 10px;
 	opacity: 0.5;
 
@@ -70,7 +70,6 @@
 	font-size: 20px;
 	padding-bottom: 25px;
 	font-weight: bolder;
-	padding-top:10px;
 }
 .youama-window-box { }
 .youama-window-subtitle p { margin:20px 0 0 0; float:left; width:100%; font-size:14px; font-weight:bold; color:#aaa; }
@@ -110,9 +109,11 @@
 .youama-window-box .youama-forgot-password 
 {
 	float: right;
-	margin-top: 10px;
-	font-size: 10px;
+	margin-top: 5px;
+	font-size: 9px;
 	text-transform: none;
+	position: relative;
+	left: 10px;
 }
 
 .youama-ajaxlogin-loader { background-image:url('../../../images/youama/ajaxlogin/loader.gif'); background-repeat:no-repeat; background-position:center center; width:220px; height:20px; position:fixed; display:none; margin-left:-110px; margin-top:-10px; top:35%; left:50%; z-index:9999; }

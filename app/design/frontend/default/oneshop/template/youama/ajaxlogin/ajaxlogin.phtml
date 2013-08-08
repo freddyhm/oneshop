@@ -89,13 +89,19 @@
                     <div class="youama-window-box first">
                         <div class="youama-window-title">
                             <h3>
-                                <?php echo $this->__('Registration') ?>
+                                <?php echo $this->__('Join The Community!') ?>
                             </h3>
                         </div>
-                        <div class="switch-link" id="login-link">Login</div>
-                        <div class="youama-window-subtitle youama-showhideme">
-                            <p><?php echo $this->__('Profile Informations') ?></p>
-                        </div>
+                        <div class="switch-link" id="login-link">Already a member?</div>
+                    <div id="fb-facepile">
+                       <div class="fb-facepile" data-href="http://facebook.com/1neshop" data-action="Comma separated list of action of action types" data-width="297" data-max-rows="1" data-size="small"></div>
+                    </div>
+                    <?php if(!Mage::getSingleton('customer/session')->isLoggedIn()):?>
+                    <a href="#" id="register-fb-btn" onclick="return fblogin();" class="fb_button_ps">
+                        <div id="fb-login">Login with Facebook</div>
+                    </a>
+                    <?php endif?>
+    
                         <div class="youama-window-content">
                             <div class="input-fly youama-showhideme">
                                 <label for="youama-firstname"><?php echo $this->__('First Name') ?> <span>*</span></label>
@@ -107,16 +113,11 @@
                                 <input type="text" placeholder="<?php echo $this->__('Last Name') ?>" id="youama-lastname" name="youama-lastname" value="" />
                                 <div class="youama-ajaxlogin-error err-lastname err-nolastname err-dirtylastname"></div>
                             </div>
-                            <div class="input-fly input-fly-checkbox youama-showhideme">
-                                <input type="checkbox" id="youama-newsletter" name="youama-newsletter" value="ok" />
-                                <label for="youama-newsletter"><?php echo $this->__('Subscribe to Newsletter') ?></label>
-                            </div>
+
                         </div>
                     </div>
                     <div class="youama-window-box second">
-                        <div class="youama-window-subtitle youama-showhideme">
-                            <p><?php echo $this->__('Login Datas') ?></p>
-                        </div>
+                
                         <div class="youama-window-content">
                             <div class="input-fly youama-showhideme">
                                 <label for="youama-email"><?php echo $this->__('E-mail address') ?> <span>*</span></label>
@@ -132,11 +133,6 @@
                                 <label for="youama-passwordsecond"><?php echo $this->__('Password confirmation') ?> <span>*</span></label>
                                 <input type="password" placeholder="<?php echo $this->__('Password confirmation') ?>" id="youama-passwordsecond" name="youama-passwordsecond" value="" />
                                 <div class="youama-ajaxlogin-error err-passwordsecond err-nopasswordsecond err-notsamepasswords"></div>
-                            </div>
-                            <div class="input-fly input-fly-checkbox youama-showhideme">
-                                <input type="checkbox" id="youama-licence" name="youama-licence" value="ok" />
-                                <label for="youama-licence"><?php echo $this->__('I accept the') ?> <a href="#" target="_blank"><?php echo $this->__('Terms and Coditions') ?></a></label>
-                                <div class="youama-ajaxlogin-error err-nolicence"></div>
                             </div>
                         </div>
                     </div>

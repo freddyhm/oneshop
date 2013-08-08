@@ -2468,6 +2468,17 @@ right: 20px;
 	left: 10px;
 }
 
+
+#register-fb-btn
+{
+	position: relative;
+	background-color: #3b5998;
+	width: 297px;
+	height: 40px;
+	left: 10px;
+	top: -30px;
+}
+
 .register-boxes
 {
 	display: none;
@@ -2533,10 +2544,27 @@ right: 20px;
 
 #login-link
 {
-	background-color: #533371;
+	left: -10px;
+	top: -110px;
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+	position: relative;
+	font-size: 9px;
+	color: #533371 !important;
+	font-weight:lighter;
 }
 
 #register-link
 {
 	background-color: #1d1d1d;
 }
+
+#fb-facepile
+{
+	position: relative;
+	top: -40px;
+	left: -5px;
+
+}
+

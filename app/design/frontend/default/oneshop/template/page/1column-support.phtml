@@ -16,7 +16,8 @@
                     <div id="page-content">
                         <?php echo $this->getChildHtml('global_messages') ?>
                         <div id="page-list">
-                            <img alt="oneshop support page icon" id="page-oneshop-icon">
+
+                            <img alt="oneshop support page icon" id="page-oneshop-icon" src="<?php  $this->getSkinUrl('images/imagename.gif', array('_secure'=>true)); ?>">
                             <ul>
                                 <a href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB); ?>help/"><li id="help-link">Help</li></a>
                                 <a href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB); ?>about/"><li id="about-link">About</li></a>

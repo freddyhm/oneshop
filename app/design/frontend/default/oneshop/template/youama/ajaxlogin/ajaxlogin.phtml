@@ -510,7 +510,15 @@
                     }
                     
                     function setSizes(position){
+
                         setTop('login');
+
+                        // reposition login box for help pages - 1-col support
+                        if($("#page-list").height() > 0){
+                            $('.youama-login-window').css('top', '-3%');
+                            $('.youama-close').css("left", "271px");
+                            $('.youama-login-window').css("right", "23%");
+                        }
                     }
                     
                     function setTop(windowName){

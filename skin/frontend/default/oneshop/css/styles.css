@@ -958,8 +958,21 @@ line-height: 4;
 
 .products-grid.first .product-image { border-top:0; }
 .products-grid li.last .product-image { border-right:0; }
-.products-grid .product-name { font-size:12px; margin:0 0 6px; }
-.products-grid .product-name a { color:#444; text-decoration:underline; }
+.products-grid .product-name { font-size:17px; margin:0 0 6px; }
+.products-grid .product-name a 
+{
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: normal !important;
+	font-size: 18px;
+	text-align: center;
+	font-family: "Helvetica" !important;
+	width: 200px;
+	position: relative;
+	top: 10px;
+	left: 17px;
+}
 .products-grid .product-name a:hover { text-decoration:none; }
 .products-grid .price-box { margin:5px 0; }
 .products-grid .availability { line-height:21px; }
@@ -1152,11 +1165,28 @@ line-height: 4;
 .price { white-space:nowrap !important; }
 
 .price-box { margin:5px 0 10px; }
-.price-box .price { font-size:13px; font-weight:bold; color:#396f00; }
+.price-box .price 
+{
+	font-size: 14px;
+	font-weight: 100;
+	color: #fff;
+	float: right;
+	position: relative;
+	left: -15px;
+}
 
 /* Regular price */
 .regular-price { color:#396f00; }
-.regular-price .price { font-size:13px; font-weight:bold; color:#396f00; }
+.regular-price .price
+{
+	font-size: 14px;
+	font-weight: 100;
+	color: #fff;
+	float: right;
+	position: relative;
+	left: -15px;
+}
+
 
 /* Old price */
 .old-price { margin:0; }
@@ -2376,9 +2406,10 @@ margin: auto;
 
 .col-support-pages
 {
-
 	width: 100%;
 	float: left;
+	top: -13px;
+	position: relative;
 }
 
 #page-list li:hover
@@ -2441,7 +2472,7 @@ right: 20px;
 #page-pic 
 {
     width: 100%;
-    height: 130px;
+    height: 166px;
 
 }
 
@@ -2464,7 +2495,7 @@ right: 20px;
 	line-height: 1.15;
 	position: relative;
 	text-align: center;
-	top: 30px;
+	top: 48px;
 }
 
 /* LOGIN POP UP */
@@ -2565,15 +2596,15 @@ right: 20px;
 
 #login-link
 {
-	left: -10px;
+	left: -47px;
 	top: -110px;
-	width: 32px;
 	height: 32px;
 	cursor: pointer;
 	position: relative;
 	font-size: 9px;
 	color: #533371 !important;
 	font-weight:lighter;
+	float:left;
 }
 
 #register-link

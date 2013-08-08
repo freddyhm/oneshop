@@ -2390,15 +2390,15 @@ margin: auto;
 
 #page-list 
 {
-width: 165px;
-height: 800px;
-float: left;
-text-transform: uppercase;
-background-color: #f6f6f6;
-font-size: 11px;
-font-weight: bolder;
-left: 5px;
-position: relative;
+	width: 165px;
+	height: 800px;
+	float: left;
+	text-transform: uppercase;
+	background-color: #f6f6f6;
+	font-size: 11px;
+	font-weight: bolder;
+	left: 5px;
+	position: relative;
 }
 
 #page-list ul
@@ -2416,7 +2416,11 @@ position: relative;
 	margin-bottom: 0px;
 	border-bottom: solid #eeeeee 1px;
 	color:#a1a1a1;
+}
 
+#page-oneshop-icon
+{
+	width: 166px;
 }
 
 #page-section 
@@ -2514,25 +2518,6 @@ right: 20px;
 	width: 295px;
 	left: -9px;
 	opacity: 0.2;
-}
-
-.btn-login-ajaxlogin
-{
-	position: relative;
-	background-color: #533371;
-	width: 148px;
-	height: 40px;
-	left: 10px;
-	color:white;
-	cursor: pointer;
-	border:none;
-	display: inline;
-	font-size:12px;
-	color:white !important;
-	text-transform: none;
-	font-weight: bolder;
-	text-align: center;
-	line-height: 38px;
 }
 
 .switch-link

@@ -958,8 +958,17 @@ line-height: 4;
 
 .products-grid.first .product-image { border-top:0; }
 .products-grid li.last .product-image { border-right:0; }
-.products-grid .product-name { font-size:12px; margin:0 0 6px; }
-.products-grid .product-name a { color:#444; text-decoration:underline; }
+.products-grid .product-name { font-size:17px; margin:0 0 6px; }
+.products-grid .product-name a 
+{
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: lighter !important;
+	font-size: 17px;
+	text-align: center;
+	font-family: "Helvetica" !important;
+}
 .products-grid .product-name a:hover { text-decoration:none; }
 .products-grid .price-box { margin:5px 0; }
 .products-grid .availability { line-height:21px; }

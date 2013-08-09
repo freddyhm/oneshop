@@ -247,6 +247,7 @@
                         });
 
                         $('.youama-login-window button').live('click', function(){
+                             alert("d");
                             setDatas('login');
                             validateDatas('login');
                             if (opts.errors != ''){
@@ -308,6 +309,8 @@
                     function validateDatas(windowName){
                         opts.errors = '';
                         
+                        //var windowName = $(".register-boxes").css("display") == 'block' ? 'register' : 'login'; 
+
                         if (windowName == 'register'){
 
                             if (opts.lastname.length < 1){

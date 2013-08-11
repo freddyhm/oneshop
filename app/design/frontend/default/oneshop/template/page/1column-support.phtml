@@ -18,7 +18,9 @@
     <div class="page">
         <div class="main-container col1-layout">
             <div class="main">
+                <?php print_r(Mage::getSingleton('customer/session')->getCustomer()->_addresses); ?>
                 <?php echo $this->getChildHtml('breadcrumbs') ?>
+
                 <div class="col-support-pages">
                     <div id="page-content">
                         <?php echo $this->getChildHtml('global_messages') ?>

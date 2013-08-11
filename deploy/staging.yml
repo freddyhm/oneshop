@@ -1,0 +1,9 @@
+scheme: sftp
+host: oneshop.ca
+username: oneshop8
+password: fhmsme18
+path: staging/
+exclude:
+    - .gitignore
+    - deploy/
+    - app/etc/local.xml

@@ -1,8 +1,0 @@
-scheme: sftp
-host: oneshop.ca
-username: oneshop8
-password: fhmsme18
-path: public_html/
-exclude:
-    - .gitignore
-    - deploy/

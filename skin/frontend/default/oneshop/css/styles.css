@@ -609,7 +609,7 @@ tr.summary-details-excluded { font-style:italic; }
 .header .top-promo { float:left; width:117px; height:30px; margin:12px 10px 0; background:url(../images/bkg_top-promo.gif) 0 0 no-repeat; text-indent:-999em; overflow:hidden; }
 
 
-.quick-access { background:blue; font-size: 11px; font-weight: bolder; color:#ababab; padding:7px 13px; text-align:right; }
+.quick-access { background:red; font-size: 11px; font-weight: bolder; color:#ababab; padding:7px 13px; text-align:right; }
 .quick-access .welcome-msg { display:inline; margin:0; color:#ababab; }
 .quick-access .welcome-msg a { color:#ababab; }
 .quick-access .form-language { float:left; }

@@ -136,6 +136,15 @@ li { list-style-type: none;}
 .col-main { float:left; width:686px; padding:0 0 1px; }
 .col-right { float:right; width:300px; padding:0 0 1px; }
 
+.checkout-onepage-index .col-right
+{
+	float: right;
+	width: 300px;
+	padding: 0 0 1px;
+	top: 114px;
+	position: relative;
+}
+
 /* 1 Column Layout */
 .col1-layout .main 
 { 
@@ -1537,9 +1546,9 @@ line-height: 4;
 
 .checkout-onepage-index .col-main
 {
-	margin:auto ;
-	float: none;
-	width:700px;
+	margin: auto;
+	float: left;
+	width: 657px;
 }
 
 /* Checkout Types */
@@ -1688,9 +1697,10 @@ line-height: 4;
 .cart .totals 
 { 
 	float: right;
-	bottom: 39px;
+	bottom: 267px;
 	position: relative;
 	padding: 12px 0;
+	right: 310px;
 }
 .cart .totals table { float:right; width:400px; margin:0 0 8px; }
 .cart .totals td { padding:0 0 0 15px; }
@@ -2210,9 +2220,9 @@ line-height: 4;
 .footer ul 
 { 
 	display: inline;
-	position: absolute;
-	top: 13px;
-	left: 380px;
+	position: relative;
+	top: 2px;
+	left: 10px;
 
 }
 .footer li { display:inline; padding:0 8px 0 0; margin:0 3px 0 0;  }

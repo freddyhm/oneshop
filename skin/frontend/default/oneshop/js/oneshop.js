@@ -1,5 +1,14 @@
 jQuery(document).ready(function($){
 
+
+	// adds color to cart count
+	var cartStatus =  $(".top-link-cart").html();
+	if(cartStatus != "My Cart"){
+		var items = cartStatus.substring("8");
+		$(".top-link-cart").html("<span id='my-cart-title'>My Cart </span><span id='my-cart-count'>" + items + "</span>");
+	}
+	
+
   
 	//@all pages w/nav, color link when selected, except blog
 	if($("#nav").height() > 0){

@@ -38,6 +38,7 @@
              <remove name="footer_links"/>
         </reference>
         <reference name="top.links">
+            <remove name="wishlist_link"/>
             <action method="addLink" before="-">
                 <label>Help</label>
                 <url>/help</url>
@@ -48,6 +49,9 @@
             </action>
             <action method="removeLinkByUrl">
                 <url helper="customer/getAccountUrl"/>
+            </action> 
+             <action method="removeLinkByUrl">
+                <url helper="customer/getWishlistUrl"/>
             </action> 
             <remove name="checkout_cart_link"/>       
             <block type="checkout/links" name="checkout_cart_link_custom">
@@ -84,7 +88,6 @@
                 <urlParams/>
                 <position>40</position>
             </action>
-
         </reference>
     </customer_logged_out>
      <checkout_cart_index>
@@ -100,10 +103,4 @@
             <remove name="product_tag_list"/>
         </reference>
     </catalog_product_view>
-    <customer_account>
-        <reference name="customer_account_navigation">`
-       
-        </reference>
-    </customer_account>
-
 </layout>

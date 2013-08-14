@@ -1759,8 +1759,7 @@ line-height: 4;
 	float: right;
 	bottom: 80px;
 	position: relative;
-	top: 5px;
-	right: 300px;
+	top: 36px;
 }
 .cart .totals table { float:right; width:400px; margin:0 0 8px; }
 .cart .totals td { padding:0 0 0 15px; }

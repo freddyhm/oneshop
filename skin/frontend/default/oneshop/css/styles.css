@@ -2334,7 +2334,6 @@ line-height: 4;
 {
 	width: 1265px;
 	height: 450px;
-	background: url("../images/assets/cover.jpg") no-repeat;
 	background-size: 100%;
 	top:41px;
 	position: relative;
@@ -2349,15 +2348,14 @@ line-height: 4;
 
 #bottom-section
 {
-background-color: #fff;
-width: 1000px;
-color: grey;
-font-size: 10px;
-position: relative;
-bottom: -44px;
-height: 275px;
-margin: auto;
-
+	background-color: #fff;
+	width: 1000px;
+	color: grey;
+	font-size: 10px;
+	position: relative;
+	bottom: -44px;
+	height: 275px;
+	margin: auto;
 }
 
 

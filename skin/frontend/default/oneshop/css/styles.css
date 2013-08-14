@@ -145,6 +145,13 @@ li { list-style-type: none;}
 	position: relative;
 }
 
+/* 1 Column Layout for Share & Earn */
+.cms-share-earn .col-main
+{
+	top:44px;
+	position: relative;
+}
+
 /* 1 Column Layout */
 .col1-layout .main 
 { 

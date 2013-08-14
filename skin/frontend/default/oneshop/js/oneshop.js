@@ -74,39 +74,36 @@ jQuery(document).ready(function($){
 		var pageName = $(".TitleHeading").html();
 		var bannerImg = "";
 		var pageElementId = ""; 
+		var skinUrl = getSkinUrl();
 
 		switch(pageName)
 		{
 			case "Faq": 
-				bannerImg = "url('one')";
+				bannerImg = "url('" + skinUrl + "support-faq.jpg')";
 				pageElementId = "#faq-link";
 				break;
 			case "About":
-				bannerImg = "url('two')";
+				bannerImg = "url('" + skinUrl + "support-about.jpg')";
 				pageElementId = "#about-link";
 				break;
-			case "Shipping":
-				bannerImg = "url('two')";
+			case "Shipping &amp; Returns":
+				bannerImg = "url('" + skinUrl + "support-shipping.jpg')";
 				pageElementId = "#shipping-link";
 				break;
-			case "Return Policy":
-				bannerImg = "url('two')";
-				pageElementId = "#return-link";
-				break;
 			case "Terms of Service":
-				bannerImg = "url('two')";
+				bannerImg = "url('" + skinUrl + "support-tos.jpg')";
 				pageElementId = "#tos-link";
 				break;
 			case "Privacy Policy":
-				bannerImg = "url('two')";
+				bannerImg = "url('" + skinUrl + "support-privacy.jpg')";
 				pageElementId = "#privacy-link";
 				break;
 			case "Contact Us":
-				bannerImg = "url('two')";
+				bannerImg = "url('" + skinUrl + "support-contact.jpg')";
 				pageElementId = "#contact-link";
 				break;
 			case "Help":
-				bannerImg = "url('two')";
+				bannerImg = "url('" + skinUrl + "support-help.jpg')";
 				pageElementId = "#help-link";
 				break;
 			default:

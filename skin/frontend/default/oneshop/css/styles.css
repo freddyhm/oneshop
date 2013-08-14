@@ -162,7 +162,7 @@ li { list-style-type: none;}
 
 #my-cart-count
 {
-	color: #9E76C5;
+	color: #7B55A0;
 }
 
 .cart-empty
@@ -212,10 +212,26 @@ li { list-style-type: none;}
 
 /* Global Styles ========================================================================= */
 /* Form Elements */
-input,select,textarea,button { font:12px/15px  Helvetica; vertical-align:middle; color:#000; }
+input,select,textarea,button 
+{ 
+font: 12px/15px Helvetica;
+vertical-align: middle;
+color: #533371;
+font-weight: 700;
+text-align: center;
+}
 input.input-text,select,textarea { background:#fff; border:1px solid #b6b6b6; }
 input.input-text,textarea { padding:2px; }
-select { padding:1px; }
+select 
+{ 
+	padding:20px; 
+	border:none;
+	-webkit-border-radius:0px;
+    -moz-border-radius:0px;
+    border-radius:0px;
+    cursor:pointer;
+
+}
 select option { padding-right:10px; }
 select.multiselect option { border-bottom:1px solid #b6b6b6; padding:1px 5px; }
 select.multiselect option:last-child { border-bottom:0; }

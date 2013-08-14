@@ -62,7 +62,7 @@ legend        { display:none; }
 
 /* Table */
 table         { border:0; /*border-collapse:collapse;*/ border-spacing:0; empty-cells:show; font-size:12px; }
-caption,th,td { vertical-align:top; text-align:left; font-weight:normal; }
+caption,th,td { vertical-align:middle; text-align:left; font-weight:normal; }
 
 /* Content */
 p             { margin:0 0 1em; }
@@ -141,7 +141,7 @@ li { list-style-type: none;}
 	float: right;
 	width: 300px;
 	padding: 0 0 1px;
-	top: 114px;
+	top: 91px;
 	position: relative;
 }
 
@@ -221,7 +221,7 @@ button.button span
 {
 float: left;
 height: 36px;
-background-color: #333333;
+background-color: #A7A7A7;
 font: 500 9px/34px Tahoma, Verdana, Arial, sans-serif;
 text-transform: none;
 white-space: nowrap;
@@ -1697,10 +1697,10 @@ line-height: 4;
 .cart .totals 
 { 
 	float: right;
-	bottom: 267px;
+	bottom: 80px;
 	position: relative;
-	padding: 12px 0;
-	right: 310px;
+	top: 5px;
+	right: 300px;
 }
 .cart .totals table { float:right; width:400px; margin:0 0 8px; }
 .cart .totals td { padding:0 0 0 15px; }

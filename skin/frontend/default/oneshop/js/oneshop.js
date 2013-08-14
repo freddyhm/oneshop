@@ -88,7 +88,7 @@ jQuery(document).ready(function($){
 				break;
 			case "Shipping &amp; Returns":
 				bannerImg = "url('" + skinUrl + "support-shipping.jpg')";
-				pageElementId = "#shipping-link";
+				pageElementId = "#shipping-returns-link";
 				break;
 			case "Terms of Service":
 				bannerImg = "url('" + skinUrl + "support-tos.jpg')";

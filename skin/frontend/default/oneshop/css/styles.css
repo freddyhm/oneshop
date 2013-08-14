@@ -148,8 +148,11 @@ li { list-style-type: none;}
 /* 1 Column Layout for Share & Earn */
 .cms-share-earn .col-main
 {
-	top:29px;
+	top: 28px;
 	position: relative;
+	background: url('../images/assets/share.jpg') no-repeat center center;
+	height: 600px;
+	width: 992px !important;
 }
 
 /* 1 Column Layout */
@@ -178,12 +181,7 @@ li { list-style-type: none;}
 }
 
 .col1-layout .col-main 
-{
-float: none;
-width: 992px;
-height:992px;
-background-color: blue;
- }
+{ float:none; width:auto; }
 
 .category-shop .col-main
 {
@@ -474,6 +472,13 @@ font-weight: bolder;
 color: #717171;
 padding-top: 26px;
 padding-bottom: 12px; 
+}
+.cms-share-earn .page-title h1
+{
+	font-size:60px;
+	color:white;
+	text-align: center;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
 }
 .page-title .separator { margin:0 3px; }
 .page-title .link-rss { float:right; margin:7px 0 0; }
@@ -1765,7 +1770,8 @@ line-height: 4;
 	float: right;
 	bottom: 80px;
 	position: relative;
-	top: 36px;
+	top: 5px;
+	right: 300px;
 }
 .cart .totals table { float:right; width:400px; margin:0 0 8px; }
 .cart .totals td { padding:0 0 0 15px; }
@@ -2776,4 +2782,14 @@ right: 20px;
 .pop-up-link:hover
 {
 	background-color:#634580;
+}
+
+#share-earn
+{
+	padding: 10px;
+	width: 400px;
+	height: 400px;
+	margin: auto;
+	text-align: center;
+	color: #fff;
 }

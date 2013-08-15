@@ -475,7 +475,7 @@ padding-bottom: 12px;
 }
 .cms-share-earn .page-title h1
 {
-	font-size:60px;
+	font-size:80px;
 	color:white;
 	text-align: center;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
@@ -2799,4 +2799,104 @@ right: 20px;
 	margin: auto;
 	text-align: center;
 	color: #fff;
+}
+
+#fb-share
+{
+	width: 400px;
+	height: 43px;
+	background-color: #3b5998;
+	line-height: 43px;
+	font-weight: bolder;
+	font-size: 12px;
+	cursor:pointer;
+}
+
+#fb-share:hover
+{
+	background-color: #526A9B;
+}
+
+#twitter-share
+{
+	width: 400px;
+	height: 43px;
+	background-color: #00aced;
+	line-height: 43px;
+	font-weight: bolder;
+	font-size: 12px;
+	cursor:pointer;
+	position: relative;
+top: 30px;
+}
+
+#twitter-share:hover
+{
+	background-color: #2ebbfb;
+}
+
+#explain
+{
+	text-transform: none;
+	font-size: 16px;
+	text-align: left;
+	width: 602px;
+	position: relative;
+	top: -40px;
+	left: -100px;
+	color: #fff;
+	font-weight: 500;
+	padding-bottom: 15px;
+}
+
+.share-divider 
+{
+	width: 400px;
+	text-align: center;
+	position: relative;
+	top: 70px;
+	font-size: 10px;
+	vertical-align: middle;
+	opacity: 0.4;
+}
+
+.share-divider hr 
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 46%;
+	position: relative;
+	top: 5px;
+	border:1px white solid;
+
+}
+
+.left {
+    float:left;
+}
+
+.right {
+    float:right;
+}
+
+#label-link-share
+{
+	position: relative;
+	top: 90px;
+	font-size: 12px;
+	text-transform: none;
+	opacity: 0.9;
+}
+
+#link-share
+{
+	position: relative;
+	top: 100px;
+	width: 400px;
+	height: 101px;
+}
+
+input #share
+{
+	color:red !important;
 }

@@ -85,7 +85,6 @@
                         </div>
                     </div>
                 </div>
-                 
                 <div class="register-boxes">
                     <div class="youama-window-box first">
                         <div class="youama-window-title">
@@ -221,14 +220,29 @@
                     }
                     
                     function sendEvents(){
-                        $('.youama-register-window button').live('click', function(){
+                        $('.register-btn').live('click', function(){
                             setDatas('register');
                             validateDatas('register');
+
+
+
                             if (opts.errors != ''){
                                 setError(opts.errors, 'register');
                             }
                             else{
                                 callAjaxControllerRegistration();
+                            }
+                            return false;
+                        });
+
+                        $('.btn-login-ajaxlogin').live('click', function(){
+                            setDatas('login');
+                            validateDatas('login');
+                            if (opts.errors != ''){
+                                setError(opts.errors, 'login');
+                            }
+                            else{
+                                callAjaxControllerLogin();
                             }
                             return false;
                         });
@@ -244,19 +258,6 @@
                                     callAjaxControllerLogin();
                                 }
                             }
-                        });
-
-                        $('.youama-login-window button').live('click', function(){
-                             alert("d");
-                            setDatas('login');
-                            validateDatas('login');
-                            if (opts.errors != ''){
-                                setError(opts.errors, 'login');
-                            }
-                            else{
-                                callAjaxControllerLogin();
-                            }
-                            return false;
                         });
                     }
 
@@ -308,9 +309,7 @@
 
                     function validateDatas(windowName){
                         opts.errors = '';
-                        
-                        //var windowName = $(".register-boxes").css("display") == 'block' ? 'register' : 'login'; 
-
+   
                         if (windowName == 'register'){
 
                             if (opts.lastname.length < 1){
@@ -374,37 +373,39 @@
                     }
 
                     function setDatas(windowName){
-                        if (windowName == 'register'){
-                            opts.firstname = $('.youama-' + windowName + '-window #youama-firstname').val();
-                            opts.lastname = $('.youama-' + windowName + '-window #youama-lastname').val();
 
-                            if ($('.youama-' + windowName + '-window input[name="youama-newsletter"]:checked').length > 0){
+                        // windowName is set by which box is visible not the window (default behavior)
+                        if (windowName == 'register'){
+                            opts.firstname = $('.register-boxes #youama-firstname').val();
+                            opts.lastname = $('.register-boxes #youama-lastname').val();
+
+                            if ($('.register-boxes input[name="youama-newsletter"]:checked').length > 0){
                                 opts.newsletter = 'ok';
                             }
                             else{
                                 opts.newsletter = 'no';
                             }
 
-                            opts.email = $('.youama-' + windowName + '-window #youama-email').val();
-                            opts.password = $('.youama-' + windowName + '-window #youama-password').val();
-                            opts.passwordsecond = $('.youama-' + windowName + '-window #youama-passwordsecond').val();
+                            opts.email = $('.register-boxes #youama-email').val();
+                            opts.password = $('.register-boxes #youama-password').val();
+                            opts.passwordsecond = $('.register-boxes #youama-passwordsecond').val();
 
-                            if ($('.youama-' + windowName + '-window input[name="youama-licence"]:checked').length > 0){
+                       //     if ($('.register-boxes input[name="youama-licence"]:checked').length > 0){
                                 opts.licence = 'ok';
-                            }
-                            else{
-                                opts.licence = 'no';
-                            }
+                          //  }
+                           // else{
+                            //    opts.licence = 'no';
+                           // }
                         }
                         else if (windowName == 'login'){
-                            opts.email = $('.youama-' + windowName + '-window #youama-email').val();
-                            opts.password = $('.youama-' + windowName + '-window #youama-password').val();
+                            opts.email = $('.login-boxes #youama-email').val();
+                            opts.password = $('.login-boxes #youama-password').val();
                         }
                     }
 
                     function setError(errors, windowName){
-                        $('.youama-' + windowName + '-window .youama-ajaxlogin-error').text('');
-                        $('.youama-' + windowName + '-window .youama-ajaxlogin-error').hide();
+                        $('.'+ windowName + '-boxes .youama-ajaxlogin-error').text('');
+                        $('.'+ windowName + '-boxes .youama-ajaxlogin-error').hide();
 
                         var errorArr = new Array();
                         errorArr = errors.split(',');
@@ -414,10 +415,10 @@
                         for (var i = 0; i < length; i++) {
                             var errorText = $('.ytmpa-' + errorArr[i]).text();
 
-                            $('.youama-' + windowName + '-window .err-' + errorArr[i]).text(errorText);
+                            $('.'+ windowName + '-boxes .err-' + errorArr[i]).text(errorText);
                         }
 
-                        $('.youama-' + windowName + '-window .youama-ajaxlogin-error').fadeIn();
+                        $('.'+ windowName + '-boxes .youama-ajaxlogin-error').fadeIn();
                     }
 
                     function callAjaxControllerRegistration(){

@@ -2767,6 +2767,7 @@ right: 20px;
 	border: none;
 	font-weight: bolder;
 	color: white;
+	cursor: pointer;
 }
 
 .register-btn:hover

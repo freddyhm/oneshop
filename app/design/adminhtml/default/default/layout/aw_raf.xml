@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">     
+    <awraf_admin_adminhtml_rules_index>
+        <reference name="content">
+            <block type="awraf/adminhtml_rules" name="awraf.rules" />
+        </reference>
+    </awraf_admin_adminhtml_rules_index>
+    <awraf_admin_adminhtml_stats_index>
+        <reference name="content">
+            <block type="awraf/adminhtml_stats" name="awraf.stats" />
+        </reference>
+    </awraf_admin_adminhtml_stats_index>  
+     <awraf_admin_adminhtml_discounts_index>
+        <reference name="content">
+            <block type="awraf/adminhtml_bonus" name="awraf.bonus" />
+        </reference>
+    </awraf_admin_adminhtml_discounts_index> 
+     <awraf_admin_adminhtml_transactions_index>
+        <reference name="content">
+            <block type="awraf/adminhtml_transaction" name="awraf.transaction" />
+        </reference>
+    </awraf_admin_adminhtml_transactions_index>
+    <awraf_admin_adminhtml_discounts_edit>
+        <reference name="content">
+            <block type="awraf/adminhtml_bonus_edit" name="awraf.bonus.edit" />
+        </reference>
+    </awraf_admin_adminhtml_discounts_edit>
+    <awraf_admin_adminhtml_transactions_new>
+        <reference name="content">
+            <block type="awraf/adminhtml_transaction_new" name="awraf.transaction.new" />
+        </reference>
+    </awraf_admin_adminhtml_transactions_new>         
+</layout>

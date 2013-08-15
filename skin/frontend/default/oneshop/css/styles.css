@@ -671,7 +671,14 @@ tr.summary-details-excluded { font-style:italic; }
 
 
 .quick-access { background:#131313; font-size: 11px; font-weight: bolder; color:#ababab; padding:7px 13px; text-align:right; }
-.quick-access .welcome-msg { display:inline; margin:0; color:#ababab; }
+.quick-access .welcome-msg 
+{ 
+	display: inline;
+	margin: 0;
+	color: #ababab;
+	top: 10px;
+	position: relative;
+}
 .quick-access .welcome-msg a { color:#ababab; }
 .quick-access .form-language { float:left; }
 .quick-access .form-language label { font-weight:bold; padding-right:5px; color:#ababab; vertical-align:middle; }

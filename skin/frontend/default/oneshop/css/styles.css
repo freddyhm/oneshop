@@ -2894,9 +2894,16 @@ top: 30px;
 	top: 100px;
 	width: 400px;
 	height: 101px;
+	padding-top:10px;
 }
 
-input #share
+#link-share input
 {
-	color:red !important;
+color: #7E7E7E !important;
+width: 380px;
+height: 25px;
+border: none;
+font-size: 16px;
+font-weight: 200;
+padding: 10px;
 }

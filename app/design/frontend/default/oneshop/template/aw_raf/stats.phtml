@@ -1,0 +1,99 @@
+<?php
+/**
+ * aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ *
+ * =================================================================
+ *                 MAGENTO EDITION USAGE NOTICE
+ * =================================================================
+ * This package designed for Magento community edition
+ * aheadWorks does not guarantee correct work of this extension
+ * on any other Magento edition except Magento community edition.
+ * aheadWorks does not provide extension support in case of
+ * incorrect edition usage.
+ * =================================================================
+ *
+ * @category   AW
+ * @package    AW_Raf
+ * @version    2.0.3
+ * @copyright  Copyright (c) 2010-2012 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ */
+?><?php
+?>
+<?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
+<?php $_invites = $this->getInvites(); ?>
+<div class="page-title">
+    <h1><?php echo $this->__('Account Information') ?></h1>
+</div>
+<div class="aw-raf-statistics">
+    <div class="fieldset"> 
+        <h2 class="legend"><?php echo $this->__('Referred Friends'); ?></h2>
+
+        <?php echo $this->getChildHtml('awraf.stats.pager'); ?>
+        <?php if ($_invites->getSize()): ?>
+            <table cellspacing="0" class="data-table" id="referred-friends-table">
+                <thead>
+                    <tr>          
+                        <th><?php echo $this->__('Customer Email') ?></th>
+                        <th><?php echo $this->__('Signed up') ?></th>
+                        <th><?php echo $this->__('?onfirmed') ?></th>
+                        <th><?php echo $this->__('Purchased Qty') ?></th>
+                        <th><?php echo $this->__('Purchased Amount') ?></th>
+                    </tr>
+                </thead>   
+                <tbody>
+                    <?php foreach ($_invites as $_invite): ?>
+                        <tr>               
+                            <td><?php echo $_invite->getEmail() ?></td>
+                            <td><?php echo $_invite->getCustomerId() ? $this->__('yes') : $this->__('no') ?></td>
+                            <td><?php echo $this->isConfirmed($_invite) ? $this->__('yes') : $this->__('no') ?></td>
+                            <td class="a-right"><?php echo (int) $_invite->getItemsPurchased() ?></td>
+                            <td class="a-right"><?php echo $this->formatAmount($_invite->getAmountPurchased()) ?></td>
+                        </tr>
+                    <?php endforeach; ?>
+                </tbody>
+            </table>
+            <script type="text/javascript">decorateTable('referred-friends-table')</script>
+            <?php echo $this->getChildHtml('awraf.stats.pager'); ?>
+        <?php else: ?>
+            <p><?php echo $this->__('You have no referred friends.'); ?></p>
+        <?php endif ?>
+
+        <div class="col2-set addresses-list">    
+            <div class="col-1">
+                <h2><?php echo $this->__('Active Balance'); ?></h2>
+                <ol>
+                    <li class="awraf-balance-item item">
+                        <?php echo $this->getActiveBalance(); ?>
+                    </li> 
+                </ol> 
+            </div>
+            <div class="col-2">
+                <h2><?php echo $this->__('Active Discount'); ?></h2>
+                <ol>
+                    <li class="awraf-balance-item item">
+                        <?php echo (float) $this->getActiveDiscount(); ?>%
+                    </li>
+                </ol>
+            </div>
+        </div> 
+
+       
+            <?php if ($this->isInviteAllowed()): ?>
+                <div class="fieldset">
+                  <h2 class="legend"><?php echo $this->__('Invite Form'); ?></h2>
+                  <?php echo $this->getChildHtml('awraf.invite_button'); ?>
+               </div>
+            <?php endif; ?> 
+        
+
+        <?php echo $this->getChildHtml('awraf.broad.cast.link') ?>
+    </div>
+</div>

@@ -39,13 +39,9 @@
         </reference>
         <reference name="top.links">
             <remove name="wishlist_link"/>
-            <action method="addLink" before="-">
-                <label>Help</label>
-                <url>/help</url>
-            </action> 
             <action method="addLink">
-                <label>Share &amp; Earn</label>
-                <url>/share-earn</url>
+                <label>Perks</label>
+                <url>/perks</url>
             </action>
             <action method="removeLinkByUrl">
                 <url helper="customer/getAccountUrl"/>

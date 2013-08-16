@@ -1387,6 +1387,8 @@ line-height: 4;
 	color: #858585;
 	font-weight:100;
 	border-bottom: 1px solid #E2E2E2;
+	border-top: 1px solid #e2e2e2;
+	line-height: 2;
 }
 .product-collateral h2 
 { 

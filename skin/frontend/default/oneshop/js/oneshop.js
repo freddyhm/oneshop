@@ -102,10 +102,6 @@ jQuery(document).ready(function($){
 				bannerImg = "url('" + skinUrl + "support-contact.jpg')";
 				pageElementId = "#contact-link";
 				break;
-			case "Help":
-				bannerImg = "url('" + skinUrl + "support-help.jpg')";
-				pageElementId = "#help-link";
-				break;
 			default:
 				break;
 		}

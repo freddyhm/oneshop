@@ -262,6 +262,11 @@ padding-left: 7px;
 font-size: 11px;
 }
 
+button.button span:hover
+{
+	background-color: #3D3C3C;
+}
+
 button.button span span { background-position:100% 0; padding:0 15px 0 9px; }
 button.disabled span { color:#bbb !important; }
 
@@ -275,6 +280,11 @@ button.btn-checkout span
 	font: bold 16px/46px Arial, Helvetica, sans-serif;
 	color: #fff; 
 }
+
+button.btn-checkout span:hover
+{
+	background-color: #634580;
+} 
 
 button.btn-checkout:hover
 {
@@ -473,7 +483,7 @@ color: #717171;
 padding-top: 26px;
 padding-bottom: 12px; 
 }
-.cms-share-earn .page-title h1
+.cms-perks .page-title h1
 {
 	font-size:80px;
 	color:white;

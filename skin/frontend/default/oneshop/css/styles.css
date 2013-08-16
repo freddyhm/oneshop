@@ -1849,8 +1849,7 @@ line-height: 4;
 	float: right;
 	bottom: 80px;
 	position: relative;
-	top: 5px;
-	right: 300px;
+	top: 10px;
 }
 .cart .totals table { float:right; width:400px; margin:0 0 8px; }
 .cart .totals td { padding:0 0 0 15px; }
@@ -2380,7 +2379,7 @@ line-height: 4;
 { 
 	display: inline;
 	position: relative;
-	top: 2px;
+	top: 1px;
 	left: 10px;
 
 }
@@ -2918,7 +2917,7 @@ top: 30px;
 	top: -40px;
 	left: -100px;
 	color: #fff;
-	font-weight: 500;
+	font-weight: 100;
 	padding-bottom: 15px;
 }
 
@@ -3004,4 +3003,10 @@ padding-right: 47px;
 .catalog-product-view button.button span:hover
 {
 	background-color: #634580;
+}
+
+.welcome-msg img
+{
+	width:16px;
+	height:16px;
 }

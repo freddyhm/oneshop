@@ -1425,7 +1425,8 @@ line-height: 4;
 .add-to-box .add-to-links li .separator { display:none !important; }
 
 /* Position fb like button in product page */
-.catalog-product-view .fb_edge_widget_with_comment {
+.catalog-product-view .fb_edge_widget_with_comment 
+{
 	position: relative;
 	float: right;
 }

@@ -132,7 +132,7 @@ li { list-style-type: none;}
 .main { background:#fff; border-top:0; border-bottom-color:#666; padding:16px 16px 50px; min-height:350px; }
 
 /* Base Columns */
-.col-left { float:left; width:220px; padding:0 0 1px; }
+.col-left { float:left; width:155px; padding:0 0 1px; }
 .col-main { float:left; width:686px; padding:0 0 1px; }
 .col-right { float:right; width:300px; padding:0 0 1px; }
 
@@ -189,7 +189,7 @@ li { list-style-type: none;}
 }
 
 /* 2 Columns Layout */
-.col2-left-layout .col-main { float:right; }
+.col2-left-layout .col-main { float:right;  width: 790px;}
 .col2-right-layout .col-main {}
 
 /* 3 Columns Layout */
@@ -411,14 +411,21 @@ padding-left: 15px;
 
 .buttons-set { clear:both; margin:4em 0 0; padding:8px 0 0; border-top:1px solid #e4e4e4; text-align:right; }
 .buttons-set p.required { margin:0 0 10px; }
-.buttons-set .back-link { float:left; margin:0; }
+.buttons-set .back-link 
+{ 
+	float: left;
+	margin: 0;
+	font-size: 10px;
+	font-weight: bolder;
+	padding-top: 5px;
+}
 .buttons-set button.button { float:right; margin-left:5px; }
 
 .buttons-set-order { margin:10px 0 0; }
 .buttons-set-order .please-wait { padding:5px 7px 0 0; }
 
 .fieldset { margin:0 10px 25px; }
-.fieldset .legend { margin:0 -10px 12px; background:#f1f1f1; padding:2px 10px; font-size:13px; line-height:1.25; }
+.fieldset .legend { margin:0 -10px 12px; background:#f1f1f1; padding:10px 10px; font-size:13px; line-height:1.25; }
 
 /* Form Validation */
 .validation-advice 
@@ -839,7 +846,7 @@ padding: 3px 8px;
 
 .customer-account-index .col-main
 {
-	width: 748px;
+	width: 790px;
 	padding: 0 0 1px;
 }
 .block-account
@@ -859,6 +866,7 @@ padding: 3px 8px;
 .block-account .block-content li a:hover 
 { 
 	color:#533371; 
+	background-color: rgb(233, 233, 233);
 }
 .block-account .block-content li.last a 
 { 
@@ -867,8 +875,9 @@ padding: 3px 8px;
 }
 .block-account .block-content li.current 
 { 
-	border-bottom:1px solid #eeeeee; 
-	text-align:center;
+	border-bottom: 1px solid #eeeeee;
+	text-align: center;
+	background-color: rgb(233, 233, 233);
 	color: #533371;
 }
 .block-account .block-content li.current.last 
@@ -1399,7 +1408,7 @@ line-height: 4;
 
 /* Add to Cart */
 .add-to-cart label { float:left; margin-right:5px; font-weight:bold; line-height:20px; color:#555; }
-.add-to-cart .qty { float:left; margin-right:5px; }
+.add-to-cart .qty { float:left; margin-right:15px; }
 .add-to-cart button.button { float:left; margin:-3px 0 0; }
 .add-to-cart .paypal-logo { clear:left; margin:0; text-align:right; }
 .add-to-cart .paypal-logo .paypal-or { clear:both; display:block; margin:5px 60px 5px 0; }
@@ -1454,7 +1463,7 @@ line-height: 4;
 	width: 340px;
 	left: 10px;
 	font-size: 12px;
-	height: 165px;
+	height: 155px;
 	color: #858585;
 	font-weight:100;
 	border-bottom: 1px solid #E2E2E2;
@@ -1562,7 +1571,11 @@ line-height: 4;
 {
 	margin: 10px 0;
 	position: relative;
-	top: 313px;
+	top: 303px;
+	left: 22px;
+	font-size: 13px;
+	font-weight: bolder !important;
+	color: #533371;
 }
 .product-view .product-shop .short-description { margin:10px 0; }
 .product-view .product-shop .price-box 
@@ -3094,9 +3107,9 @@ font: 700 9px/43px Helvetica;
 text-transform: uppercase;
 white-space: nowrap;
 color: #fff;
-padding-left: 47px;
+padding-left: 42px;
 font-size: 11px;
-padding-right: 47px;
+padding-right: 42px;
 }
 
 .catalog-product-view button.button span:hover

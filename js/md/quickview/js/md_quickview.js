@@ -54,7 +54,7 @@ jQuery(function($) {
 		// }
 		var baseUrl = EM.Quickview.BASE_URL + mypath;
 		
-		var _qsHref = "<a id=\"md_quickview_handler\" href=\"#\" style=\"display:none;position:absolute;top:0;left:0\"><div class='pop-up-link'>one</div></a>";
+		var _qsHref = "<a id=\"md_quickview_handler\" href=\"#\" style=\"display:none;position:absolute;top:0;left:0\"><div class='pop-up-link'>QuickView</div></a>";
 		$(document.body).append(_qsHref);
 		
 		var qsHandlerImg = $('#md_quickview_handler');

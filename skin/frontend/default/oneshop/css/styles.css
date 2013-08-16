@@ -1377,6 +1377,12 @@ line-height: 4;
 .add-to-box .add-to-links li .separator { display:none !important; }
 
 
+.fb_edge_widget_with_comment {
+	position: relative;
+	float: right;
+}
+
+
 .product-view 
 {
 	top: -12px;

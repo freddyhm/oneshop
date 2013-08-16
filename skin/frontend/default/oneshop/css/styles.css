@@ -1352,13 +1352,14 @@ line-height: 4;
 	margin: 10px 0;
 	position: relative;
 	padding-top: 10px;
-	top: 16px;
+	top: 1px;
 }
 .add-to-box .add-to-cart 
 { 
 	margin:10px 0; 
 	padding:10px; 
 	text-align:right; 
+	float: right;
 }
 .add-to-box .add-to-cart .paypal-logo { float:left; }
 .add-to-box .or { display:none !important; }
@@ -1381,9 +1382,11 @@ line-height: 4;
 	top: 20px;
 	width: 340px;
 	left: 10px;
-	font-size: 11px;
-	height: 160px;
+	font-size: 12px;
+	height: 165px;
 	color: #858585;
+	font-weight:100;
+	border-bottom: 1px solid #E2E2E2;
 }
 .product-collateral h2 
 { 
@@ -1564,7 +1567,7 @@ line-height: 4;
 .mini-products-grid .ratings .rating-box { float:none; display:block; margin:0 0 3px; }
 
 /* Block: Description */
-.product-view .box-description {}
+.product-view .box-description {text-transform: none;}
 
 /* Block: Additional */
 .product-view .box-additional .data-table th,
@@ -2970,4 +2973,23 @@ padding: 10px;
 #disqus_thread
 {
 	width:1000px;
+}
+
+.catalog-product-view button.button span 
+{
+float: left;
+height: 45px;
+background-color: #533371;
+font: 700 9px/43px Helvetica;
+text-transform: uppercase;
+white-space: nowrap;
+color: #fff;
+padding-left: 47px;
+font-size: 11px;
+padding-right: 47px;
+}
+
+.catalog-product-view button.button span:hover
+{
+	background-color: #634580;
 }

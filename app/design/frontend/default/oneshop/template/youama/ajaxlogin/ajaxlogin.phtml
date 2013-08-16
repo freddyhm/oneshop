@@ -86,69 +86,73 @@
                     </div>
                 </div>
                 <div class="register-boxes">
-                    <div class="youama-window-box first">
-                        <div class="youama-window-title">
-                            <h3>
-                                <?php echo $this->__('Join The Community!') ?>
-                            </h3>
-                        </div>
-                        <div class="switch-link" id="login-link">Already a member?</div>
-                    <div id="fb-facepile">
-                       <div class="fb-facepile" data-href="http://facebook.com/1neshop" data-action="Comma separated list of action of action types" data-width="297" data-max-rows="1" data-size="small"></div>
-                    </div>
-                    <?php if(!Mage::getSingleton('customer/session')->isLoggedIn()):?>
-                    <a href="#" id="register-fb-btn" onclick="return fblogin();" class="fb_button_ps">
-                        <div id="fb-login">Connect with Facebook</div>
-                    </a>
-                    <?php endif?>
 
-                    <div id="register-divider"><div id="divider-or">or</div><hr id="register divider"></hr></div>
-    
-                        <div class="youama-window-content">
-                            <div class="input-fly youama-showhideme">
-                                <label for="youama-firstname"><?php echo $this->__('First Name') ?> <span>*</span></label>
-                                <input type="text" placeholder="<?php echo $this->__('First Name') ?>" id="youama-firstname" name="youama-firstname" value="" />
-                                <div class="youama-ajaxlogin-error err-firstname err-nofirstname err-dirtyfirstname"></div>
+                    <form action="<?php echo Mage::helper('customer')->getRegisterPostUrl() ?>" method="post" id="form-validate">
+                           
+                            <div class="youama-window-box first">
+                                <div class="youama-window-title">
+                                    <h3>
+                                        <?php echo $this->__('Join The Community!') ?>
+                                    </h3>
+                                </div>
+                                <div class="switch-link" id="login-link">Already a member?</div>
+                            <div id="fb-facepile">
+                               <div class="fb-facepile" data-href="http://facebook.com/1neshop" data-action="Comma separated list of action of action types" data-width="297" data-max-rows="1" data-size="small"></div>
                             </div>
-                            <div class="input-fly youama-showhideme">
-                                <label for="youama-lastname"><?php echo $this->__('Last Name') ?> <span>*</span></label>
-                                <input type="text" placeholder="<?php echo $this->__('Last Name') ?>" id="youama-lastname" name="youama-lastname" value="" />
-                                <div class="youama-ajaxlogin-error err-lastname err-nolastname err-dirtylastname"></div>
-                            </div>
+                            <?php if(!Mage::getSingleton('customer/session')->isLoggedIn()):?>
+                            <a href="#" id="register-fb-btn" onclick="return fblogin();" class="fb_button_ps">
+                                <div id="fb-login">Connect with Facebook</div>
+                            </a>
+                            <?php endif?>
 
-                        </div>
-                    </div>
-                    <div class="youama-window-box second">
-                
-                        <div class="youama-window-content">
-                            <div class="input-fly youama-showhideme">
-                                <label for="youama-email"><?php echo $this->__('E-mail address') ?> <span>*</span></label>
-                                <input type="text" placeholder="<?php echo $this->__('E-mail address') ?>" id="youama-email" name="youama-email" value="" />
-                                <div class="youama-ajaxlogin-error err-email err-noemail err-wrongemail err-emailisexist"></div>
+                            <div id="register-divider"><div id="divider-or">or</div><hr id="register divider"></hr></div>
+            
+                                <div class="youama-window-content">
+                                    <div class="input-fly youama-showhideme">
+                                        <label for="youama-firstname"><?php echo $this->__('First Name') ?> <span>*</span></label>
+                                        <input type="text" placeholder="<?php echo $this->__('First Name') ?>" id="youama-firstname" name="firstname" value="" />
+                                        <div class="youama-ajaxlogin-error err-firstname err-nofirstname err-dirtyfirstname"></div>
+                                    </div>
+                                    <div class="input-fly youama-showhideme">
+                                        <label for="youama-lastname"><?php echo $this->__('Last Name') ?> <span>*</span></label>
+                                        <input type="text" placeholder="<?php echo $this->__('Last Name') ?>" id="youama-lastname" name="lastname" value="" />
+                                        <div class="youama-ajaxlogin-error err-lastname err-nolastname err-dirtylastname"></div>
+                                    </div>
+
+                                </div>
                             </div>
-                            <div class="input-fly youama-showhideme">
-                                <label for="youama-password"><?php echo $this->__('Password') ?> <span>*</span></label>
-                                <input type="password" placeholder="<?php echo $this->__('Password') ?>" id="youama-password" name="youama-password" value="" />
-                                <div class="youama-ajaxlogin-error err-password err-dirtypassword err-nopassword err-shortpassword err-longpassword"></div>
+                            <div class="youama-window-box second">
+                        
+                                <div class="youama-window-content">
+                                    <div class="input-fly youama-showhideme">
+                                        <label for="youama-email"><?php echo $this->__('E-mail address') ?> <span>*</span></label>
+                                        <input type="text" placeholder="<?php echo $this->__('E-mail address') ?>" id="youama-email" name="email" value="" />
+                                        <div class="youama-ajaxlogin-error err-email err-noemail err-wrongemail err-emailisexist"></div>
+                                    </div>
+                                    <div class="input-fly youama-showhideme">
+                                        <label for="youama-password"><?php echo $this->__('Password') ?> <span>*</span></label>
+                                        <input type="password" placeholder="<?php echo $this->__('Password') ?>" id="youama-password" name="password" value="" />
+                                        <div class="youama-ajaxlogin-error err-password err-dirtypassword err-nopassword err-shortpassword err-longpassword"></div>
+                                    </div>
+                                    <div class="input-fly youama-showhideme">
+                                        <label for="youama-passwordsecond"><?php echo $this->__('Password confirmation') ?> <span>*</span></label>
+                                        <input type="password" placeholder="<?php echo $this->__('Password confirmation') ?>" id="youama-passwordsecond" name="confirmation" value="" />
+                                        <div class="youama-ajaxlogin-error err-passwordsecond err-nopasswordsecond err-notsamepasswords"></div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="input-fly youama-showhideme">
-                                <label for="youama-passwordsecond"><?php echo $this->__('Password confirmation') ?> <span>*</span></label>
-                                <input type="password" placeholder="<?php echo $this->__('Password confirmation') ?>" id="youama-passwordsecond" name="youama-passwordsecond" value="" />
-                                <div class="youama-ajaxlogin-error err-passwordsecond err-nopasswordsecond err-notsamepasswords"></div>
+                            <div class="youama-window-box last">
+                                <div class="youama-window-content box-contents youama-showhideme">
+                                    <button type="submit" class="register-btn">
+                                        <span>
+                                            <span>
+                                                <?php echo $this->__('Register') ?>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="youama-window-box last">
-                        <div class="youama-window-content box-contents youama-showhideme">
-                            <button type="button" class="register-btn">
-                                <span>
-                                    <span>
-                                        <?php echo $this->__('Register') ?>
-                                    </span>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
+                     </form>
                 </div>
             </div>
         </div>
@@ -223,16 +227,14 @@
                         $('.register-btn').live('click', function(){
                             setDatas('register');
                             validateDatas('register');
-
-
-
+                            
                             if (opts.errors != ''){
                                 setError(opts.errors, 'register');
+                                return false;
                             }
-                            else{
-                                callAjaxControllerRegistration();
-                            }
-                            return false;
+                           // else{
+                             //   callAjaxControllerRegistration();
+                            //}
                         });
 
                         $('.btn-login-ajaxlogin').live('click', function(){
@@ -422,6 +424,8 @@
                     }
 
                     function callAjaxControllerRegistration(){
+
+                        /*
                         if (opts.stop != true){
 
                             opts.stop = true;
@@ -429,7 +433,7 @@
                             animateLoader('register', 'start');
 
                             var ajaxRegistration = jQuery.ajax({
-                                url: '<?php echo $this->getUrl('youama_ajaxlogin/ajax/index') ?>',
+                                url: '<?php echo $this->getUrl('youama_ajaxlogin/ajax/index'); ?>',
                                 type: 'POST',
                                 data: {
                                     ajax : 'register',
@@ -459,7 +463,9 @@
                                 opts.stop = false;
                                 animateLoader('register', 'stop');
                             });
+                            
                         }
+                        */
                     }
                 
                     function callAjaxControllerLogin(){

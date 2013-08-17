@@ -700,7 +700,7 @@ tr.summary-details-excluded { font-style:italic; }
 	display: inline;
 	margin: 0;
 	color: #ababab;
-	top: 10px;
+	top: 12px;
 	position: relative;
 }
 
@@ -708,9 +708,10 @@ tr.summary-details-excluded { font-style:italic; }
 .logout-btn
 {
 	float: right;
-	top: 3px;
 	position: relative;
-	left: 8px;
+	opacity: 0.5;
+	width: 10px;
+	height: 10px;
 }
 
 .quick-access .welcome-msg a { color:#ababab; }
@@ -3171,8 +3172,8 @@ padding-right: 42px;
 
 .welcome-msg img
 {
-	width:16px;
-	height:16px;
+	width:14px;
+	height:14px;
 }
 
 

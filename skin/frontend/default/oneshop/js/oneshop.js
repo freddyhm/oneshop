@@ -8,8 +8,16 @@ jQuery(document).ready(function($){
 		$(".top-link-cart").html("<span id='my-cart-title'>My Cart </span><span id='my-cart-count'>" + items + "</span>");
 	}
 	
+	$(".logout-btn").click(function(){
 
-  
+		var answer = confirm("Are you sure you want log out?");
+
+		if(!answer){
+			return false;
+		}
+
+	});
+  	
 	//@all pages w/nav, color link when selected, except blog
 	if($("#nav").height() > 0){
 

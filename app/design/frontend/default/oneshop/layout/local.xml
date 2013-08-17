@@ -65,6 +65,7 @@
     </catalog_category_default>
     <customer_logged_in>
         <reference name="top.links">
+            <action method="removeLinkByUrl"><url helper="customer/getLogoutUrl"/></action> 
             <action method="addLink" translate="label title" module="customer">
                 <label>My Account</label>
                 <url helper="customer/getAccountUrl"/>
@@ -74,12 +75,13 @@
     </customer_logged_in>
     <customer_logged_out>
         <reference name="top.links">
-             <action method="removeLinkByUrl"><url helper="customer/getRegisterUrl"/></action> 
+            <action method="removeLinkByUrl"><url helper="customer/getRegisterUrl"/></action> 
             <action method="removeLinkByUrl"><url helper="customer/getLoginUrl"/></action> 
+            <action method="removeLinkByUrl"><url helper="customer/getLogoutUrl"/></action> 
             <action method="addLink" translate="label title" module="customer">
-                <label>Log In</label>
+                <label>Log In / Sign Up</label>
                 <url helper="customer/getLoginUrl"/>
-                <title>Log In</title>
+                <title>Log In/Sign Up</title>
                 <prepare/>
                 <urlParams/>
                 <position>40</position>

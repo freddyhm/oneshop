@@ -703,6 +703,16 @@ tr.summary-details-excluded { font-style:italic; }
 	top: 10px;
 	position: relative;
 }
+
+
+.logout-btn
+{
+	float: right;
+	top: 3px;
+	position: relative;
+	left: 8px;
+}
+
 .quick-access .welcome-msg a { color:#ababab; }
 .quick-access .form-language { float:left; }
 .quick-access .form-language label { font-weight:bold; padding-right:5px; color:#ababab; vertical-align:middle; }
@@ -1476,7 +1486,7 @@ line-height: 4;
 .add-to-box .add-to-links li .separator { display:none !important; }
 
 /* Position fb like button in product page */
-.catalog-product-view .fb_edge_widget_with_comment 
+.product-view .fb_edge_widget_with_comment 
 {
 	position: relative;
 	float: right;

@@ -24,7 +24,7 @@
  * @copyright  Copyright (c) 2012-2013 YouAMA.com (http://www.youama.com)
  * @license    http://youama.com/freemodule-license.txt
  */
-
+ 
 .youama-ajaxlogin-cover { display:none; background:black; opacity:0.5; -moz-opacity:0.5; filter:alpha(opacity = 50); left:0; top:0; width:100%; height:100%; float:left; position:fixed; z-index:9997; }
 .youama-showhideme { display:none; }
 

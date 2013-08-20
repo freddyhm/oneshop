@@ -65,7 +65,7 @@ table         { border:0; /*border-collapse:collapse;*/ border-spacing:0; empty-
 caption,th,td { vertical-align:middle; text-align:left; font-weight:normal; }
 
 /* Content */
-p             { margin:0 0 1em; font-size: 11px; }
+p             { margin:0 0 1em; font-size: 12px; color: #717171; }
 strong        { font-weight:bold; }
 address       { font-style:normal; line-height:1.35; }
 cite          { font-style:normal; }
@@ -2908,6 +2908,7 @@ right: 20px;
 	font-weight: bolder;
 	text-align: center;
 	line-height: 38px;
+	font-family: 'Helvetica';
 }
 
 .btn-login-ajaxlogin:hover
@@ -3013,6 +3014,7 @@ right: 20px;
 	font-weight: bolder;
 	text-align: center;
 	line-height: 38px;
+	font-family:'Helvetica';
 }
 
 #login-link
@@ -3070,6 +3072,8 @@ left: -8px;
 	font-weight: bolder;
 	color: white;
 	cursor: pointer;
+	font-family: 'Helvetica';
+	font-size: 12px;
 }
 
 .register-btn:hover
@@ -3081,12 +3085,12 @@ left: -8px;
 
 .pop-up-link
 {
-	font-size: 12px;
+	font-size: 10px;
 	color: white;
 	background-color: #533371;
 	opacity: 1;
 	padding: 10px;
-	font-weight:bolder;
+	font-weight:100;
 }
 
 .pop-up-link:hover

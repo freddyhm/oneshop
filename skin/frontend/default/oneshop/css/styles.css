@@ -3048,8 +3048,13 @@ right: 20px;
 .input-box
 {
 	top: 2px;
-position: relative;
-left: -8px;
+	position: relative;
+	left: -8px;
+}
+
+#register-fields
+{
+	height: 200px !important;
 }
 
 #fb-facepile

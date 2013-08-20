@@ -3048,6 +3048,17 @@ right: 20px;
 	background-color: #3D3C3C;
 }
 
+#newsletter-register
+{
+	font-size:9px;
+}
+
+.input-box
+{
+	top: 2px;
+position: relative;
+left: -8px;
+}
 
 #fb-facepile
 {

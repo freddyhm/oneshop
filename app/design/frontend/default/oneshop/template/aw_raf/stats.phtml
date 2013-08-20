@@ -84,16 +84,6 @@
                 </ol>
             </div>
         </div> 
-
-       
-            <?php if ($this->isInviteAllowed()): ?>
-                <div class="fieldset">
-                  <h2 class="legend"><?php echo $this->__('Invite Form'); ?></h2>
-                  <?php echo $this->getChildHtml('awraf.invite_button'); ?>
-               </div>
-            <?php endif; ?> 
-        
-
         <?php echo $this->getChildHtml('awraf.broad.cast.link') ?>
     </div>
 </div>

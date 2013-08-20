@@ -54,7 +54,7 @@
                 <action method="addCartLink"><prepare/><position>100</position></action>
             </block>
         </reference>
-    </default>
+    </default>      
     <catalog_category_default>
        <reference name="root">
             <remove name="breadcrumbs"/>

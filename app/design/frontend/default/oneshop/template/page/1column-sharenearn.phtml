@@ -33,6 +33,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->getLang() ?>" lang="<?php echo $this->getLang() ?>">
 <head>
 <?php echo $this->getChildHtml('head') ?>
+<script>
+    // get referrer link and place in text box  
+    jQuery(document).ready(function($){
+          var refferLink = "<?php $link = new AW_Raf_Block_Broadcastlink(); echo $link->getReferralLink(); ?>"
+          $("#share").attr("value", refferLink);
+    });
+</script>
 </head>
 <body<?php echo $this->getBodyClass()?' class="'.$this->getBodyClass().'"':'' ?>>
 <?php echo $this->getChildHtml('after_body_start') ?>

@@ -258,7 +258,7 @@ button.button span
 float: left;
 height: 36px;
 background-color: #333333;
-font: 700 9px/34px Helvetica;
+font: 700 9px/35px Helvetica;
 text-transform: uppercase;
 white-space: nowrap;
 color: #fff;
@@ -1841,8 +1841,16 @@ left: -8px;
 {
 	margin: auto;
 	float: left;
-	width: 994px;
+	width: 610px;
 }
+
+.checkout-onepage-index .form-list label.required {
+width: 225px;
+color: #717171;
+font-size: 12px;
+padding-left: 0px;
+}
+
 
 /* Checkout Types */
 .cart .page-title .checkout-types { display:none !important; }
@@ -2033,7 +2041,7 @@ left: -8px;
 /********** < Common Checkout Styles */
 /* Shipping and Payment methods */
 .sp-methods { margin:0 0 8px; }
-.sp-methods dt { margin:13px 0 5px; font-weight:bold; }
+.sp-methods dt { margin:13px 0 5px; font-weight:bold; font-size: 16px; color: #717171; }
 .sp-methods dd {}
 .sp-methods dd li { margin:5px 0; }
 .sp-methods label 
@@ -2157,14 +2165,14 @@ left: -8px;
 
 .opc .step-title 
 {
-	border: 1px solid #E2E2E2;
-	border-top-color: #eee;
-	background: #eee;
-	padding: 4px 8px 6px;
+	border: 1px solid #EBEBEB;
+	border-top-color: #BDBDBD;
+	background: #DFDFDF;
+	padding: 15px 8px 15px;
 	text-align: right;
 }
 .opc .step-title .number { float:left; background:#fff; border:1px solid #fff; padding:0 3px; margin:0 5px 0 0; font:normal 11px/12px arial, helvetica, sans-serif; color:#444; }
-.opc .step-title h2 { float:left; margin:0; font:bold 12px/14px Arial, Helvetica, sans-serif; color:#999; }
+.opc .step-title h2 { float:left; margin:0; font:bold 18px/14px Helvetica; color:#999; }
 .opc .step-title a { display:none; float:right; font-size:11px; line-height:16px; }
 
 .opc .allow .step-title { background:#999; border-color:#999; border-top-color:#fff; color:#fff; cursor:pointer; }
@@ -2177,7 +2185,8 @@ left: -8px;
 	background: #533371;
 	border-color: #533371;
 	border-top-color: #533371;
-	padding-bottom: 5px;
+	padding-bottom: 25px;
+	padding-top:25px;
 	color: #fff;
 	cursor: pointer;
 }
@@ -2187,9 +2196,8 @@ left: -8px;
 
 .opc .step 
 { 
-	border:1px solid #ddd; 
 	border-top:0; 
-	background:#fbfbfb; 
+	background:#eeeeee; 
 	padding:15px 30px; 
 	position:relative; 
 	font-size: 11px;

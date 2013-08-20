@@ -46,7 +46,7 @@
     </div>
     <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
     <?php echo $this->getChildHtml('form_before') ?>
-    <form action="<?php echo $this->getUrl('checkout/cart/updatePost') ?>" method="post">
+    <form id="cart-checkout-form" action="<?php echo $this->getUrl('checkout/cart/updatePost') ?>" method="post">
         <fieldset>
             <table id="shopping-cart-table" class="data-table cart-table">
                 <col width="1" />
@@ -99,9 +99,9 @@
                     <tr>
                         <td colspan="50" class="a-right">
                             <?php if($this->getContinueShoppingUrl()): ?>
-                                <button type="button" title="<?php echo $this->__('Continue Shopping') ?>" class="button btn-continue" onclick="setLocation('<?php echo $this->getContinueShoppingUrl() ?>')"><span><span><?php echo $this->__('< Continue Shopping') ?></span></span></button>
+                                <a href="<?php echo $this->getContinueShoppingUrl() ?>" id="continue-shopping"><span><span><?php echo $this->__('< Continue Shopping') ?></span></span></a>
                             <?php endif; ?>
-                            <button type="submit" name="update_cart_action" value="update_qty" title="<?php echo $this->__('Update Cart'); ?>" class="button btn-continue"><span><span><?php echo $this->__('Update Cart >'); ?></span></span></button>
+                            <a href="#" id="update-cart"><span><span><?php echo $this->__('Update Cart >'); ?></span></span></a>
                         
                             <!--[if lt IE 8]>
                             <input type="hidden" id="update_cart_action_container" />

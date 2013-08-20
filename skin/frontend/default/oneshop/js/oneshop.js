@@ -1,5 +1,9 @@
 jQuery(document).ready(function($){
 
+	//@cart updates cart with link instead of button
+	$("#update-cart").click(function(){
+		$("#cart-checkout-form").submit();
+	});
 
 	// adds color to cart count
 	var cartStatus =  $(".top-link-cart").html();

@@ -1858,22 +1858,16 @@ left: -8px;
 { 
 	padding:5px 10px; 
 	position: relative;
-	left: 100px;
 }
-.cart-table .btn-continue { float:left; }
 
-.cart-continue:
+#continue-shopping
+{ 
+	float:left; 
+}
+
+#update-cart
 {
-	background: none;
-	padding: 0;
-	font: 700 11px/25px Arial, Helvetica, sans-serif;
-	color: #533371;
-	text-transform: uppercase;
-	text-decoration: none;
-	position: relative;
-	top: 4px;
-	left: 1px;
-	float:left;
+	float: right;
 }
 
 .cart-table .btn-continue:hover span { text-decoration:none; }

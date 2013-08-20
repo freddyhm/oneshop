@@ -914,11 +914,24 @@ font-size: 11px;
 	background-color: #634580;
 }
 
+
 .customer-account-index .col-main
 {
 	width: 790px;
 	padding: 0 0 1px;
 }
+
+
+
+.customer-account-index .page-title, .customer-account-edit .page-title, .customer-address-index .page-title, .sales-order-history .page-title, .sales-billing-agreement-index .page-title, .sales-recurring-profile-index .page-title, .wishlist-index-index .page-title, .awraf-index-stats .page-title, .monkey-customer-account-index .page-title
+{
+	display: none;
+}
+
+
+
+
+
 .block-account
 {
 	font-size: 11px;

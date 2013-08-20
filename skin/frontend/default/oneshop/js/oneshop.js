@@ -131,7 +131,7 @@ jQuery(document).ready(function($){
 		}else{
 			$(".login-boxes").hide(1,function(){
 				$(".register-boxes").show(1);
-				$(".youama-login-window").css("height", "525px");
+				$(".youama-login-window").css("height", "550px");
 			});
 		}
 	});	

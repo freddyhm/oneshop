@@ -1185,7 +1185,15 @@ line-height: 4;
 }
 .products-grid .product-name a:hover { text-decoration:none; }
 .products-grid .price-box { margin:5px 0; }
-.products-grid .availability { line-height:21px; }
+.products-grid .availability 
+{
+	line-height: 21px;
+	color: white;
+	position: absolute;
+	z-index: 99999;
+	font-weight: 100;
+	top: 205px;
+}
 .products-grid .actions { position:absolute; bottom:20px; }
 .col2-left-layout .products-grid,
 .col2-right-layout .products-grid { width:684px; margin:0 auto; }
@@ -1342,7 +1350,11 @@ line-height: 4;
 
 /* Availability */
 .availability { margin:0; }
-.availability span { font-weight:bold; }
+.availability span 
+{
+	font-weight: 100;
+	font-size: 12px;
+}
 .availability.in-stock span {}
 .availability.out-of-stock span { color:#d83820; }
 
@@ -1483,7 +1495,7 @@ left: -8px;
 
 /* Add to Links */
 .add-to-links { margin:3px 0 0; }
-.add-to-links li { background:url(../images/bkg_add-to.gif) 2px 50% no-repeat; line-height:1.25; padding-left:12px; }
+.add-to-links li { line-height:1.25; padding-left:12px; }
 .add-to-links li a { color:#444; }
 .add-to-links .separator { display:none; }
 

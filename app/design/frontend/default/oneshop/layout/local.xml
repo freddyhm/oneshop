@@ -94,8 +94,8 @@
         </reference>
     </checkout_cart_index>
     <checkout_onepage_index>
-        <reference name="root">
-            <action method="setTemplate"><template>page/1column.phtml</template></action>
+        <reference name="right">
+            <remove name="checkout.progress.wrapper"/>
         </reference>
     </checkout_onepage_index>
     <catalog_product_view>

@@ -3376,3 +3376,16 @@ text-transform: uppercase;
 	height:19px !important;
 }
 
+#habla_offline_message_span
+{
+	font-size: 11px !important;
+	text-transform: none;
+}
+
+#habla_offline_submit_input
+{
+	padding: 10px 15px 10px 15px;
+	font-size: 12px !important;
+	font-weight: bold !important;	
+}
+

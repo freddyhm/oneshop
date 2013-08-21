@@ -53,8 +53,14 @@ jQuery(function($) {
 			// mypath = 'index.php/quickview/index/view';
 		// }
 		var baseUrl = EM.Quickview.BASE_URL + mypath;
-		
-		var _qsHref = "<a id=\"md_quickview_handler\" href=\"#\" style=\"display:none;position:absolute;top:0;left:0\"><div class='pop-up-link'>QuickView</div></a>";
+
+		// change the quickview word pased on the current page
+		var pageName = window.location.href.toString().split("/");
+		var currentPage = pageName[3];
+		var quickWord = pageName[3] == "vote" ? pageName[3] : "quickview";
+
+
+		var _qsHref = "<a id=\"md_quickview_handler\" href=\"#\" style=\"display:none;position:absolute;top:0;left:0\"><div class='pop-up-link'>" + quickWord + "</div></a>";
 		$(document.body).append(_qsHref);
 		
 		var qsHandlerImg = $('#md_quickview_handler');

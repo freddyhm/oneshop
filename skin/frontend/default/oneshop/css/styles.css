@@ -24,6 +24,8 @@
  */
 
 /* Reset ================================================================================= */
+
+
 * { margin:0; padding:0; } 
 
 body          
@@ -3353,3 +3355,24 @@ font-size: 11px !important;
 color: #533371 !important;
 text-transform: uppercase;
 }
+
+/* Olark Help Center */
+
+#habla_window_div
+{
+	margin:0px 140px !important;
+}
+
+#habla_oplink_a
+{
+	font-size: 10px !important; 
+	font-weight: 400 !important;
+}
+
+#habla_topbar_div
+{
+	bottom:0px !!important;
+	position: relative !important;
+	height:19px !important;
+}
+

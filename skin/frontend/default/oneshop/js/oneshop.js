@@ -1,5 +1,8 @@
 jQuery(document).ready(function($){
 
+
+
+
 	//@cart updates cart with link instead of button
 	$("#update-cart").click(function(){
 		$("#cart-checkout-form").submit();
@@ -47,15 +50,29 @@ jQuery(document).ready(function($){
 
 		$(pageElementId).css("color", "#533371");
 	}
- 
+
+	
+	var currentProdId = "";
 	// show/hide product name, price, overlay
 	$(".item").hover(
 		function(){
 			$(".product-info", this).show();
+			currentProdId = $(this).attr("id");
 		}, function(){
 			$(".product-info", this).hide();
 		}
 	);
+
+	// send to wishlist to save vote
+	$("#md_quickview_handler").click(function(){
+		var url = "/wishlist/index/add/product/" + currentProdId + "/";
+		$.post(url, function(){
+			alert("Woopty fuking do, you voted");
+		});
+		$(this).show();
+		return false;
+	});
+
 
 	//@category fixes product desc hide when hover over quickview btn
 	$("#md_quickview_handler").hover(

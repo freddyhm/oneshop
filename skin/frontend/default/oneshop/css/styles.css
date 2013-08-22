@@ -1201,6 +1201,8 @@ line-height: 4;
 	z-index: 2;
 }
 
+
+
 .product-info
 {
 	width: 235px;
@@ -1320,6 +1322,14 @@ line-height: 4;
 #md_quickview_handler
 {
 	background: none !important; 
+}
+
+.md-more-info
+{
+	bottom: 57px;
+	position: relative;
+	width: 449px;	
+	float: right;
 }
 
 #fancybox-content .price
@@ -1586,10 +1596,9 @@ left: -8px;
 /* Add to Links + Add to Cart */
 .add-to-box 
 {
-	margin: 10px 0;
 	position: relative;
 	padding-top: 10px;
-	top: 1px;
+	bottom: 43px;
 }
 .add-to-box .add-to-cart 
 { 

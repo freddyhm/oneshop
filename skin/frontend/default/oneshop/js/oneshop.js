@@ -63,16 +63,19 @@ jQuery(document).ready(function($){
 		}
 	);
 
-	// send to wishlist to save vote
-	$("#md_quickview_handler").click(function(){
-		var url = "/wishlist/index/add/product/" + currentProdId + "/";
-		$.post(url, function(){
-			alert("Woopty fuking do, you voted");
+	if($(".category-vote").length > 0)
+	{
+		// send to wishlist to save vote
+		$("#md_quickview_handler").click(function(){
+			var url = "/wishlist/index/add/product/" + currentProdId + "/";
+			$.post(url, function(){
+				alert("Woopty fuking do, you voted");
+				$("#md_quickview_handler").html("voted");
+			});
+			$(this).show();
+			return false;
 		});
-		$(this).show();
-		return false;
-	});
-
+	}
 
 	//@category fixes product desc hide when hover over quickview btn
 	$("#md_quickview_handler").hover(

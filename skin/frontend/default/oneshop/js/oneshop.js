@@ -12,6 +12,7 @@ jQuery(document).ready(function($){
 		$(".top-link-cart").html("<span id='my-cart-title'>My Cart </span><span id='my-cart-count'>" + items + "</span>");
 	}
 	
+	//@general logout btn
 	$(".logout-btn").click(function(){
 
 		var answer = confirm("Are you sure you want log out?");
@@ -46,11 +47,6 @@ jQuery(document).ready(function($){
 
 		$(pageElementId).css("color", "#533371");
 	}
-
-	// init slider on homepage
-	$('.flexslider').flexslider({
-   		 slideshow: "false"
- 	});
  
 	// show/hide product name, price, overlay
 	$(".item").hover(
@@ -61,7 +57,7 @@ jQuery(document).ready(function($){
 		}
 	);
 
-	// fixes product desc hide when hover over quickview btn
+	//@category fixes product desc hide when hover over quickview btn
 	$("#md_quickview_handler").hover(
 		function(){
 

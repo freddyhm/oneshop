@@ -104,8 +104,8 @@ jQuery(function($) {
 			.bind('click', function() {
 				$(this).hide();
 			});
+			
 		//insert quickview popup
-
 		$('#md_quickview_handler').fancybox({
 				'titleShow'			: false,
 				'width'				: EM.Quickview.QS_FRM_WIDTH,

@@ -57,7 +57,7 @@ jQuery(function($) {
 		// change the quickview word pased on the current page
 		var pageName = window.location.href.toString().split("/");
 		var currentPage = pageName[3];
-		var quickWord = pageName[3] == "vote" ? pageName[3] : "quickview";
+		var quickWord = currentPage == "vote" ? currentPage : "quickview";
 
 
 		var _qsHref = "<a id=\"md_quickview_handler\" href=\"#\" style=\"display:none;position:absolute;top:0;left:0\"><div class='pop-up-link'>" + quickWord + "</div></a>";
@@ -75,6 +75,7 @@ jQuery(function($) {
 			prodHref=strTrim(prodHref);
 			
 			reloadurl = baseUrl+"/path/"+prodHref;	
+			
 			version = ieVersion();	
 			if(version < 8.0 && version > -1){
 				reloadurl = baseUrl+"/path"+prodHref;
@@ -104,26 +105,27 @@ jQuery(function($) {
 			.bind('click', function() {
 				$(this).hide();
 			});
-			
-		//insert quickview popup
-		$('#md_quickview_handler').fancybox({
-				'titleShow'			: false,
-				'width'				: EM.Quickview.QS_FRM_WIDTH,
-				'height'			: 'auto',//EM.Quickview.QS_FRM_HEIGHT,
-				'autoScale'			: false,
-				'transitionIn'		: 'none',
-				'transitionOut'		: 'none',
-				'autoDimensions'	: false,
-				'scrolling'     	: 'no',
-				'padding' 			:0,
-  				'margin'			:0,
-				'type'				: 'ajax',
-				'overlayColor'		: EM.Quickview.OVERLAYCOLOR
-				
-		});
-
-
-	
+		
+		// show fancybox only if it's not vote
+		if(currentPage != "vote")
+		{
+			//insert quickview popup
+			$('#md_quickview_handler').fancybox({
+					'titleShow'			: false,
+					'width'				: EM.Quickview.QS_FRM_WIDTH,
+					'height'			: 'auto',//EM.Quickview.QS_FRM_HEIGHT,
+					'autoScale'			: false,
+					'transitionIn'		: 'none',
+					'transitionOut'		: 'none',
+					'autoDimensions'	: false,
+					'scrolling'     	: 'no',
+					'padding' 			:0,
+	  				'margin'			:0,
+					'type'				: 'ajax',
+					'overlayColor'		: EM.Quickview.OVERLAYCOLOR
+					
+			});
+		}
 	
 	}
 

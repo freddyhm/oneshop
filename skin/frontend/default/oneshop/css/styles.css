@@ -3366,7 +3366,8 @@ text-transform: uppercase;
 #habla_oplink_a
 {
 	font-size: 10px !important; 
-	font-weight: 400 !important;
+	font-weight: bolder !important;
+	text-decoration: none !important;
 }
 
 #habla_topbar_div
@@ -3387,5 +3388,15 @@ text-transform: uppercase;
 	padding: 10px 15px 10px 15px;
 	font-size: 12px !important;
 	font-weight: bold !important;	
+	cursor: pointer !important;
 }
 
+#habla_offline_submit_input:hover
+{
+	background-color: #634580 !important;
+}
+
+.hbl_pal_title_bg:hover
+{
+background-color: #634580!important;
+}

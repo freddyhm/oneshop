@@ -112,8 +112,8 @@ jQuery(function($) {
 			//insert quickview popup
 			$('#md_quickview_handler').fancybox({
 					'titleShow'			: false,
-					'width'				: EM.Quickview.QS_FRM_WIDTH,
-					'height'			: 'auto',//EM.Quickview.QS_FRM_HEIGHT,
+					'width'				: 700,
+					'height'			: 350,//EM.Quickview.QS_FRM_HEIGHT,
 					'autoScale'			: false,
 					'transitionIn'		: 'none',
 					'transitionOut'		: 'none',
@@ -126,8 +126,7 @@ jQuery(function($) {
 					
 			});
 		}
-	
-	}
+
 
 	//end base function
 

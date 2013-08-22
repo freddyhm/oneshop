@@ -74,7 +74,9 @@ jQuery(function($) {
 			prodHref[0] == "\/" ? prodHref = prodHref.substring(1,prodHref.length) : prodHref;
 			prodHref=strTrim(prodHref);
 			
-			reloadurl = baseUrl+"/path/"+prodHref;	
+			var reloadurl = currentPage != "vote" ? baseUrl+"/path/"+prodHref : "#";	
+
+
 			
 			version = ieVersion();	
 			if(version < 8.0 && version > -1){

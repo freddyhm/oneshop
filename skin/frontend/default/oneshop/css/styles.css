@@ -141,12 +141,27 @@ li { list-style-type: none;}
 .checkout-onepage-index .col-right
 {
 	float: right;
-	width: 221px;
-	padding: 0 0 1px;
-	top: 91px;
+	width: 250px;
+	padding: 5px 5px 5px 5px;
+	top: 88px;
 	position: relative;
+	background-color: #fafafa;
 }
 
+#checkout-extra-info
+{
+	margin: 10px;
+}
+
+#first-box
+{
+	font-size: 11px;
+	text-transform: none;
+	line-height: 25px;
+	padding-bottom: 13px;
+	color: #717171;
+	font-weight: 100;
+}
 /* 1 Column Layout for Share & Earn */
 .cms-perks .col-main
 {

@@ -51,18 +51,19 @@ jQuery(document).ready(function($){
 		$(pageElementId).css("color", "#533371");
 	}
 
-	
-	var currentProdId = "";
+
+//	var onQuickview = 0;
 	// show/hide product name, price, overlay
 	$(".item").hover(
 		function(){
 			$(".product-info", this).show();
-			currentProdId = $(this).attr("id");
+		//	currentProdId = $(this).attr("id");
 		}, function(){
 			$(".product-info", this).hide();
 		}
 	);
 
+	/*
 	if($(".category-vote").length > 0)
 	{
 		// send to wishlist to save vote
@@ -76,13 +77,16 @@ jQuery(document).ready(function($){
 			return false;
 		});
 	}
+	*/
 
 	//@category fixes product desc hide when hover over quickview btn
 	$("#md_quickview_handler").hover(
 		function(){
 
 			var url = $(this).attr("href").split("/");
-			var currentProductName = url[7];
+
+			// get prod name depending on vote or shop
+			var currentProductName = $(".category-vote").length > 0 ? url[1] : url[7];
 
 			$(".product-info").each(function (i) {
 

@@ -42,6 +42,11 @@ a             { color:#533371; text-decoration:none; }
 a:hover       { color:#63487c; text-decoration:none; }
 :focus        { outline:0; }
 
+.highlight
+{
+	color:#533371;
+}
+
 /* Headings */
 h1          { font-size:2em; font-weight:normal; line-height:1.15; }
 h2          { font-size:1.5em; line-height:1.25; margin-bottom:.45em; }
